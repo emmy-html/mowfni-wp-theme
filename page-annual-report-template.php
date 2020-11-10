@@ -5,9 +5,10 @@
 <section id="annual-report-page-template">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <h1><?php the_title(); ?></h1>
-<div class="container-pdf">
-    <div class="content-wrapper">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="annual-report-page-container">
+    <div class="container-pdf">
+        <div class="content-wrapper">
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 <?php the_content(); ?>
 </div>

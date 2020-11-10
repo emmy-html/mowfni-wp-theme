@@ -415,7 +415,7 @@ BlankSlate is distributed under the terms of the GNU GPL
           padding: 20px 0px;
         }
         h3 {
-          color: #fff;
+          color: $dark-blue;
           font-size: 1.95rem;
           font-weight: 600;
           line-height: 1.75rem;
@@ -587,11 +587,11 @@ BlankSlate is distributed under the terms of the GNU GPL
           max-width: 490px;
         }
         &:nth-of-type(1) {
-          background: center no-repeat url('img/heavy-filter-02.png');
+          background: center no-repeat url('img/about-mow-mission.png');
           background-size: cover;
         }
         &:nth-of-type(2) {
-          background: center no-repeat url('img/heavy-filler-01.png');
+          background: center no-repeat url('img/about-mow-vision.png');
           background-size: cover;
         }
       }
@@ -677,11 +677,6 @@ BlankSlate is distributed under the terms of the GNU GPL
     @include body-green-button;
   }
 }
-  /* Annual Report Page */ 
-  #annual-report-page {
-    @include page-header;
-    padding-top: 75px;
-  }
   /* Resources Page */ 
 #resources-page {
   @include page-header;
@@ -1192,6 +1187,9 @@ BlankSlate is distributed under the terms of the GNU GPL
     background: #fff;
     color: $dark-blue;
     padding: 20px 0px;
+  }
+  .tablinks {
+    text-transform: none !important;
   }
 }
   /* Current Events Page */
@@ -2414,11 +2412,13 @@ BlankSlate is distributed under the terms of the GNU GPL
       }
     }
     #annual-report-page-template {
-      .container-pdf {
+      .annual-report-page-container {
         display: flex;
+        align-items: flex-start;
         justify-content: center;
-        align-items: center;
-        widows: 80%;
+        aside {
+          margin: 160px 0px 0px 30px;
+        }
       }
     }
     #popover {
@@ -2463,13 +2463,14 @@ BlankSlate is distributed under the terms of the GNU GPL
     .wp-block-file__button {
       @include body-green-button;
       font-size: 1.25rem;
-      margin: 10px 0px;
+      margin: 10px;
       &:hover {
         color: $dark-blue;
         opacity: 1;
       }
     }
   }
+
   /* general page template */
   #general-page-template {
     @include page-header;

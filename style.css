@@ -1254,7 +1254,7 @@ main a:visited {
       height: 150px;
       padding: 20px 0px; }
     #involvement-cta .involvement-cta-content article h3 {
-      color: #fff;
+      color: #003952;
       font-size: 1.95rem;
       font-weight: 600;
       line-height: 1.75rem; }
@@ -1422,10 +1422,10 @@ footer {
       min-width: 280px;
       max-width: 490px; }
     #about-page-hero .about-page-hero-content article:nth-of-type(1) {
-      background: center no-repeat url("img/heavy-filter-02.png");
+      background: center no-repeat url("img/about-mow-mission.png");
       background-size: cover; }
     #about-page-hero .about-page-hero-content article:nth-of-type(2) {
-      background: center no-repeat url("img/heavy-filler-01.png");
+      background: center no-repeat url("img/about-mow-vision.png");
       background-size: cover; }
 
 /* About Page > About Us > Our History Section */
@@ -1515,20 +1515,6 @@ footer {
     #board-of-directors-page .rounded-green-button:hover {
       background: #00b5c2;
       transition: 1s background; }
-
-/* Annual Report Page */
-#annual-report-page {
-  padding-top: 75px; }
-  #annual-report-page h1 {
-    background: #a9cf38;
-    color: #003952;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 20px 0px;
-    margin: 0 auto;
-    width: 100%; }
-    #annual-report-page h1 span {
-      color: #003952; }
 
 /* Resources Page */
 #resources-page {
@@ -2272,6 +2258,8 @@ footer {
   background: #fff;
   color: #003952;
   padding: 20px 0px; }
+#other-ways-page .tablinks {
+  text-transform: none !important; }
 
 /* Current Events Page */
 #current-events-page h1 {
@@ -3614,11 +3602,12 @@ footer {
       width: 50%;
       height: 400px; }
 
-  #annual-report-page-template .container-pdf {
+  #annual-report-page-template .annual-report-page-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    widows: 80%; }
+    align-items: flex-start;
+    justify-content: center; }
+    #annual-report-page-template .annual-report-page-container aside {
+      margin: 160px 0px 0px 30px; }
 
   #popover {
     padding: 0px !important; }
@@ -3663,7 +3652,7 @@ footer {
     border-bottom: none;
     padding: 5px 15px;
     font-size: 1.25rem;
-    margin: 10px 0px; }
+    margin: 10px; }
     #annual-report-page-template .wp-block-file__button:hover {
       background: #00b5c2;
       transition: 1s background; }
