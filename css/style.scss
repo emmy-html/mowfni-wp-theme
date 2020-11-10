@@ -1310,7 +1310,7 @@ BlankSlate is distributed under the terms of the GNU GPL
   color: $dark-blue;
   .volunteer-page-span {
     @include page-hero;
-    background: top no-repeat url('img/volunteer-hero.png');
+    background: top no-repeat url('../img/volunteer-hero.png');
     background-size: cover;
   }
   .content-wrapper {
@@ -1345,12 +1345,12 @@ BlankSlate is distributed under the terms of the GNU GPL
       &:nth-of-type(1) {
         background: $light-blue;
         width: 100%;
-        height: 200px;
+        height: 120px;
       }
       &:nth-of-type(2) {
         background: $lime-green;
         width: 100%;
-        height: 200px;
+        height: 120px;
       }
       a:link,
       a:visited {
@@ -1391,10 +1391,6 @@ BlankSlate is distributed under the terms of the GNU GPL
           line-height: 2rem;
           margin: 0px;
         }
-        &:nth-of-type(1) {
-          background: center no-repeat url('img/filler-square-01.png');
-          background-size: cover;
-        }
         a:link,
         a:visited {
           text-decoration: none;
@@ -1406,20 +1402,17 @@ BlankSlate is distributed under the terms of the GNU GPL
     h3 {
       margin-top: 15px;
     }
-    article.filler-image {
-      img {
-        width: 100%;
-        padding-bottom: 20px;
-      }
-    }
     aside {
       padding: 20px 0px;
       width: 100%;
-      &:nth-of-type(even) {
+      &:nth-of-type(1) {
+        background: $light-blue;
+      }
+      &:nth-of-type(2) {
         background: #fff;
       }
-      &:nth-of-type(odd) {
-        background: $light-blue;
+      &:nth-of-type(3) {
+        background: $lime-green;
       }
       &:nth-last-of-type(1) {
         display: flex;
@@ -1439,11 +1432,10 @@ BlankSlate is distributed under the terms of the GNU GPL
           margin: 0px;
         }
         &:hover {
-          background: $lime-green;
+          background: $light-blue;
           transition: 1s background;
           h2, h3 {
             color: $dark-blue;
-            transition: 1s color;
           }
         }
       }
@@ -1454,25 +1446,13 @@ BlankSlate is distributed under the terms of the GNU GPL
   @include page-header;
   background: #fff;
   color: $dark-blue;
+  padding: 0px;
+  margin: 0px;
   .button-container {
     @include button-container;
-    margin: 20px;
+    padding: 20px;
     .rounded-blue-button {
       @include body-blue-button;
-    }
-  }
-  .volunteer-page-locations-container {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 20px 0px;
-    div {
-      padding: 5px 0px;
-    }
-    h3 {
-      text-align: left;
-    }
-    p {
-      margin: 0;
     }
   }
 }
@@ -2220,7 +2200,7 @@ BlankSlate is distributed under the terms of the GNU GPL
   #volunteer-page-hero {
     .volunteer-page-hero-content {
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
     }
     .button-container {
       .rounded-green-button {
@@ -2230,15 +2210,16 @@ BlankSlate is distributed under the terms of the GNU GPL
     }
     .volunteer-page-options {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
+      width: 100%;
       article {
         &:nth-of-type(1) {
-          width: 100%;
-          height: 250px;
+          width: 50%;
+          height: 100px;
         }
         &:nth-of-type(2) {
-          width: 100%;
-          height: 250px;
+          width: 50%;
+          height: 100px;
         }
       }
     }
@@ -2250,27 +2231,27 @@ BlankSlate is distributed under the terms of the GNU GPL
       justify-content: center;
       align-items: center;
       padding: 0px;
-      article.filler-image {
-        width: 50%;
-      }
       aside {
         width: 50%;
         height: 310px;
+        &:nth-of-type(1) {
+          height: 310px;
+        }
+        &:nth-of-type(2) {
+          height: 310px;
+        }
+        &:nth-of-type(3) {
+          background: #fff;
+          height: 120px;
+        }
+        &:nth-of-type(4) {
+          height: 120px;          
+        }
       }
     }
   }
   #volunteer-page-locations {
-    padding-bottom: 10px;
-    .volunteer-page-locations-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      aside {
-        width: 33.3%;
-        padding: 5px 0px;
-      }
-    }
+    width: 100%;
   }
     /* Get Involved Page */ 
     #get-involved-page-cta {
