@@ -798,6 +798,7 @@ BlankSlate is distributed under the terms of the GNU GPL
   }
   .donation-page-content-container {
     @include button-container;
+    padding-top: 20px;
     .button-container {
       margin-bottom: 20px;
       .rounded-blue-button {
@@ -810,7 +811,6 @@ BlankSlate is distributed under the terms of the GNU GPL
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 30px 0px;
     .donation-container {
       display: flex;
       flex-direction: column;
@@ -864,13 +864,34 @@ BlankSlate is distributed under the terms of the GNU GPL
         overflow: hidden;
       }
     }
-    .employee-match {
-      .button-container {
-        padding: 0px 20px;
-        .rounded-green-button {
-          &:hover {
-            background: #fff;
-          }
+  }
+  .donation-page-donor-support {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    h1 {
+      background: $light-blue;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 100px;
+    }
+    a:link,
+    a:visited {
+      border-bottom: 2px solid $lime-green;
+      text-transform: none;
+      &:hover {
+        border-bottom: 2px solid #fff;
+      }
+    }
+    .button-container {
+      margin: 20px;
+      a:link,
+      a:visited {
+        text-transform: uppercase;
+        border-bottom: none;
+        &:hover {
+          background: #fff;
         }
       }
     }
@@ -2060,6 +2081,11 @@ BlankSlate is distributed under the terms of the GNU GPL
           padding: 10px 0px;
         }
       }
+      .donation-page-donor-support {
+        background: $light-blue;
+        width: 55%;
+        margin: 0 auto;
+      }
     }
     .content-wrapper {
       h2 {
@@ -2114,52 +2140,6 @@ BlankSlate is distributed under the terms of the GNU GPL
       margin: 20px;
       .rounded-blue-button {
         @include body-blue-button;
-      }
-    }
-  }
-  #donation-page-additional-support {
-    .additional-support-container {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: flex-start;
-      article {
-        width: 50%;
-      }
-      aside {
-        width: 50%;
-      }
-      .donation-page-giving-options {
-        order: 1;
-        height: 480px;
-      }
-      .first-photo {
-        order: 2;
-        height: 480px;
-      }
-      .second-photo {
-        order: 3;
-        height: 350px;
-      }
-      .donation-page-donor-support {
-        order: 4;
-        height: 350px;
-      }
-      
-      .donation-page-giving-options,
-      .donation-page-donor-support {
-        height: auto;
-      }
-      .donation-page-donor-support {
-        .donor-support-icons {
-          width: 400px;
-          margin: 0 auto;
-          i {
-            margin: 0;
-          }
-          img {
-            margin: 0;
-          }
-        }
       }
     }
   }
