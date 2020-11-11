@@ -1030,11 +1030,12 @@ h2, h4 {
 main a:link,
 main a:visited {
   color: #003952;
+  border-bottom: 2px solid #a9cf38;
   text-decoration: none;
   font-weight: 600; }
   main a:link:hover,
   main a:visited:hover {
-    border-bottom: 2px solid #a9cf38; }
+    border-bottom: 2px solid #00b5c2; }
 
 /* Hero section */
 #hero {
@@ -1389,7 +1390,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #about-page-hero h1 span {
@@ -1434,7 +1435,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #about-page-our-history h1 span {
@@ -1473,7 +1474,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #board-of-directors-page h1 span {
@@ -1527,7 +1528,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #resources-page h1 span {
@@ -1662,7 +1663,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #resources-additional-resources h1 span {
@@ -1697,7 +1698,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #donation-page h1 span {
@@ -1830,7 +1831,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #donation-page-gift-impact h1 span {
@@ -1922,7 +1923,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #donation-page-corporate-giving h1 span {
@@ -1974,7 +1975,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #donation-page-additional-support h1 span {
@@ -2041,7 +2042,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #donation-page-cta h1 span {
@@ -2092,7 +2093,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #other-ways-page h1 span {
@@ -2267,7 +2268,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #current-events-page h1 span {
@@ -2300,7 +2301,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #past-events-page h1 span {
@@ -2372,6 +2373,18 @@ footer {
         #past-events-page .past-events-page-content article .button-container a:link:hover,
         #past-events-page .past-events-page-content article .button-container a:visited:hover {
           border-bottom: none; }
+      #past-events-page .past-events-page-content article .button-container .wp-block-button__link {
+        background: #a9cf38;
+        border-radius: 5px;
+        border-bottom: none;
+        padding: 5px 15px;
+        color: #003952;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700; }
+        #past-events-page .past-events-page-content article .button-container .wp-block-button__link:hover {
+          background: #00b5c2;
+          transition: 1s background; }
       #past-events-page .past-events-page-content article .button-container .rounded-green-button {
         background: #a9cf38;
         border-radius: 5px;
@@ -2389,7 +2402,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #single-event-page-hero h1 span {
@@ -2420,15 +2433,15 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #single-event-page-desc h1 span {
       color: #003952; }
   #single-event-page-desc p {
     margin: 0;
-    padding: 20px 0px 0px 0px;
-    text-align: justify; }
+    text-align: justify;
+    padding-top: 10px; }
     #single-event-page-desc p:nth-last-of-type(1) {
       padding-bottom: 20px; }
 
@@ -2451,7 +2464,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #volunteer-page-hero h1 span {
@@ -2520,7 +2533,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #volunteer-page-opportunities h1 span {
@@ -2602,7 +2615,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #volunteer-page-locations h1 span {
@@ -2636,7 +2649,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #volunteer-page-cta h1 span {
@@ -2717,7 +2730,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #volunteer-page-corporate h1 span {
@@ -2731,7 +2744,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #get-involved-page-hero h1 span {
@@ -2762,7 +2775,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #get-involved-page-cta h1 span {
@@ -2810,7 +2823,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #about-mow-page-hero h1 span {
@@ -2839,7 +2852,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #about-mow-page-locations h1 span {
@@ -2947,7 +2960,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #about-mow-page-volunteer h1 span {
@@ -3028,7 +3041,7 @@ footer {
   color: #003952;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0 auto;
   width: 100%; }
   #single-mow-location-page h1 span {
@@ -3628,8 +3641,45 @@ footer {
         width: 240px;
         margin: 0 auto; }
         #popover .popover-content .content-wrapper .donation-form-container .donation-form-filler {
-          width: 23px; } }
+          width: 23px; }
+
+  #hidden-donation-page-template .donation-page-content-container {
+    display: flex;
+    flex-direction: row !important; }
+    #hidden-donation-page-template .donation-page-content-container .donation-container {
+      width: 400px !important; }
+    #hidden-donation-page-template .donation-page-content-container aside {
+      width: 45%; }
+    #hidden-donation-page-template .donation-page-content-container article {
+      width: 40%; }
+  #hidden-donation-page-template .content-wrapper h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    min-width: 700px;
+    max-width: 710px;
+    margin: 0 auto; }
+  #hidden-donation-page-template .content-wrapper .donation-container {
+    margin: 0 auto;
+    padding-left: 60px; } }
 /* wordpress specific styles */
+.wp-block-video {
+  width: 40% !important;
+  margin: 0 auto;
+  padding: 20px 0px; }
+
+.center-img {
+  margin: 0 auto;
+  padding: 20px 0px; }
+
+.volunteer-luncheon-letters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px; }
+  .volunteer-luncheon-letters img {
+    width: 30%; }
+
 /* annual report page template */
 #annual-report-page-template {
   background: #fff;
@@ -3639,7 +3689,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #annual-report-page-template h1 span {
@@ -3669,7 +3719,7 @@ footer {
     color: #003952;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin: 0 auto;
     width: 100%; }
     #general-page-template h1 span {
@@ -3738,6 +3788,39 @@ div#n2-ss-3 .n2-ss-button-container:hover, div#n2-ss-3 .n2-ss-button-container a
   border: none !important;
   background-color: none !important;
   box-shadow: none !important; }
+
+/* hidden donation page template */
+#hidden-donation-page-template {
+  background: #fff;
+  color: #003952; }
+  #hidden-donation-page-template h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #hidden-donation-page-template h1 span {
+      color: #003952; }
+  #hidden-donation-page-template .donation-page-content-container {
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #hidden-donation-page-template .donation-page-content-container img {
+      width: 100%; }
+    #hidden-donation-page-template .donation-page-content-container .donation-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    #hidden-donation-page-template .donation-page-content-container h2 {
+      font-weight: 400;
+      line-height: 2rem;
+      text-transform: none;
+      padding: 20px 0px; }
 
 /*
 * Hide only visually, but have it available for screen readers:

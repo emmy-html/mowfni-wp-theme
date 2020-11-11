@@ -181,10 +181,11 @@ BlankSlate is distributed under the terms of the GNU GPL
     a:link,
     a:visited {
       color: $dark-blue;
+      border-bottom: 2px solid $lime-green;
       text-decoration: none;
       font-weight: 600;
       &:hover {
-        border-bottom: 2px solid $lime-green;
+        border-bottom: 2px solid $light-blue;
       }
     }
   }
@@ -1257,6 +1258,13 @@ BlankSlate is distributed under the terms of the GNU GPL
         .button-container {
           @include button-container;
           padding: 10px 0px;
+          .wp-block-button__link {
+            @include body-green-button;
+            color: $dark-blue;
+            text-transform: uppercase;
+            font-family: $heading-font;
+            font-weight: 700;
+          }
           .rounded-green-button {
             @include body-green-button;
           }
@@ -1280,8 +1288,8 @@ BlankSlate is distributed under the terms of the GNU GPL
     color: $dark-blue;
     p {
       margin: 0;
-      padding: 20px 0px 0px 0px;
       text-align: justify;
+      padding-top: 10px;
       &:nth-last-of-type(1) {
         padding-bottom: 20px;
       }
@@ -2450,8 +2458,55 @@ BlankSlate is distributed under the terms of the GNU GPL
 
       }
     }
+    #hidden-donation-page-template {
+      .donation-page-content-container {
+          display: flex;
+          flex-direction: row !important;
+        .donation-container {
+          width: 400px !important;
+        }
+        aside {
+          width: 45%;
+        }
+        article {
+          width: 40%;
+        }
+      }
+      .content-wrapper {
+        h2 {
+          font-size: 2rem;
+          line-height: 2rem;
+          min-width: 700px;
+          max-width: 710px;
+          margin: 0 auto;
+        }
+        .donation-container {
+          margin: 0 auto;
+          padding-left: 60px;
+        }
+      }
+    }
   }
   /* wordpress specific styles */ 
+  .wp-block-video {
+    width: 40% !important;
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
+  .center-img {
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
+  .volunteer-luncheon-letters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    img {
+      width: 30%;
+    }
+  }
   /* annual report page template */ 
   #annual-report-page-template {
     background: #fff;
@@ -2470,7 +2525,6 @@ BlankSlate is distributed under the terms of the GNU GPL
       }
     }
   }
-
   /* general page template */
   #general-page-template {
     @include page-header;
@@ -2551,7 +2605,34 @@ BlankSlate is distributed under the terms of the GNU GPL
     background-color: none !important;
     box-shadow: none !important;
   }
-  
+  /* hidden donation page template */
+  #hidden-donation-page-template {
+    @include page-header;
+    background: #fff;
+    color: $dark-blue;
+    .donation-page-content-container {
+      margin: 0 auto;
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      img {
+          width: 100%;
+      }
+      .donation-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        font-weight: 400;
+        line-height: 2rem;
+        text-transform: none;
+        padding: 20px 0px;
+      }
+    }
+  }
   /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
