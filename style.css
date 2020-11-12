@@ -1,18 +1,18 @@
 @charset "UTF-8";
 /*
-Theme Name: MOWFNI
-Theme URI: https://github.com/tidythemes/blankslate
-Author: TidyThemes
-Author URI: http://tidythemes.com/
-Description: Please read: tidythemes.com/concept. BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
-Version: 2019.1
+Theme Name: MOWFNI Parent Theme
+Theme URI: https://github.com/emmy-html/mowfni-wp-theme
+Author: emmy-html
+Author URI: https://github.com/emmy-html
+Description: This theme was written by Emmy for the Meals On Wheels Foundation of Northern Illinois. Thanks to Tidy Themes for the Blankslate base! https://github.com/tidythemes/blankslate/
+Version: 2020.1
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
 Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
-Text Domain: mowfni
+Text Domain: mowfni-parent
 
-BlankSlate WordPress Theme © 2011-2019 TidyThemes
-BlankSlate is distributed under the terms of the GNU GPL
+MOWFNI Parent WordPress Theme © 2020 emmy-html
+MOWFNI Parent is distributed under the terms of the GNU GPL
 */
 /* imports */
 @font-face {
@@ -974,24 +974,6 @@ textarea {
   src: url(/fonts/Poppins-Regular.ttf); }
 /* Transitions */
 /* Universal Styles */
-/* scrollbar */
-/* width */
-::-webkit-scrollbar {
-  width: 10px; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #003952; }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #a9cf38;
-  height: 40px; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #fff; }
-
 body {
   background: #003952;
   color: #fff;
@@ -1018,6 +1000,7 @@ h2, h4 {
   text-align: center; }
   .button-container a:link,
   .button-container a:visited {
+    border-bottom: none;
     color: #003952;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -1593,6 +1576,7 @@ footer {
         padding-top: 30px; } }
   #resources-page a:link,
   #resources-page a:visited {
+    border-bottom: none;
     color: #003952;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -1727,6 +1711,7 @@ footer {
     justify-content: space-around; }
     #donation-page .donation-page-content-container a:link,
     #donation-page .donation-page-content-container a:visited {
+      border-bottom: none;
       color: #003952;
       font-family: "Poppins", sans-serif;
       font-weight: 700;
@@ -1900,6 +1885,7 @@ footer {
       margin-bottom: 20px; }
       #donation-page-gift-impact article .button-container a:link,
       #donation-page-gift-impact article .button-container a:visited {
+        border-bottom: none;
         color: #003952;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
@@ -2193,6 +2179,7 @@ footer {
       padding-top: 20px; }
       #other-ways-page article.other-ways-desc .multi-button-container .button-container a:link,
       #other-ways-page article.other-ways-desc .multi-button-container .button-container a:visited {
+        border-bottom: none;
         color: #003952;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
@@ -2365,6 +2352,7 @@ footer {
       padding: 10px 0px; }
       #past-events-page .past-events-page-content article .button-container a:link,
       #past-events-page .past-events-page-content article .button-container a:visited {
+        border-bottom: none;
         color: #003952;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
@@ -2628,6 +2616,7 @@ footer {
     padding: 20px; }
     #volunteer-page-locations .button-container a:link,
     #volunteer-page-locations .button-container a:visited {
+      border-bottom: none;
       color: #003952;
       font-family: "Poppins", sans-serif;
       font-weight: 700;
@@ -2702,6 +2691,7 @@ footer {
   margin: 20px; }
   #volunteer-page-cta .button-container a:link,
   #volunteer-page-cta .button-container a:visited {
+    border-bottom: none;
     color: #003952;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -2862,8 +2852,7 @@ footer {
   color: #003952; }
   #about-mow-page-locations .about-mow-page-locations-content .map {
     background: #00b5c2;
-    width: 100%;
-    height: 400px; }
+    width: 100%; }
     #about-mow-page-locations .about-mow-page-locations-content .map h3 {
       padding-top: 50px; }
   #about-mow-page-locations .about-mow-page-locations-content .about-mow-page-programs {
@@ -3018,6 +3007,7 @@ footer {
     padding: 20px; }
     #about-mow-page-volunteer .button-container a:link,
     #about-mow-page-volunteer .button-container a:visited {
+      border-bottom: none;
       color: #003952;
       font-family: "Poppins", sans-serif;
       font-weight: 700;
@@ -3386,6 +3376,7 @@ footer {
     margin: 20px; }
     #donation-page-corporate-giving .button-container a:link,
     #donation-page-corporate-giving .button-container a:visited {
+      border-bottom: none;
       color: #003952;
       font-family: "Poppins", sans-serif;
       font-weight: 700;
@@ -3680,6 +3671,14 @@ footer {
   .volunteer-luncheon-letters img {
     width: 30%; }
 
+/* map location descriptions */
+.gmpInfoWindowtitle {
+  font-family: "Poppins", sans-serif; }
+
+.egm-marker-iw p {
+  margin: 0;
+  padding: 5px 0px; }
+
 /* annual report page template */
 #annual-report-page-template {
   background: #fff;
@@ -3763,6 +3762,7 @@ main {
         max-width: 100px; }
       #popover .popover-content .donation-form-container .donate-button {
         background: #003952;
+        border-bottom: none;
         padding: 10px;
         color: #fff;
         font-family: "Poppins", sans-serif;

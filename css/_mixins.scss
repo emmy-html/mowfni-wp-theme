@@ -12,6 +12,7 @@
     text-align: center;
     a:link,
     a:visited {
+      border-bottom: none;
       color: $dark-blue;
       font-family: $heading-font;
       font-weight: 700;
