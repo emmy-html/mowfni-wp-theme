@@ -2632,6 +2632,9 @@ footer {
       #volunteer-page-locations .button-container .rounded-blue-button:hover {
         background: #a9cf38;
         transition: 1s background; }
+  #volunteer-page-locations .volunteer-page-service-area {
+    display: flex;
+    flex-direction: column; }
 
 #volunteer-page-cta h1 {
   background: #a9cf38;
@@ -3480,8 +3483,13 @@ footer {
       #volunteer-page-opportunities .volunteer-page-opportunities-container aside i {
         margin-top: 40px; }
 
-  #volunteer-page-locations {
-    width: 100%; }
+  /* Volunteer Page Service Area */
+  #volunteer-page-locations .volunteer-page-service-area {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+    #volunteer-page-locations .volunteer-page-service-area .volunteer-page-locations-container {
+      width: 84.7%; }
 
   /* Get Involved Page */
   #get-involved-page-cta .get-involved-cta-container {

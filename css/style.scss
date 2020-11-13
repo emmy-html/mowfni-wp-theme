@@ -1407,6 +1407,10 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       @include body-blue-button;
     }
   }
+  .volunteer-page-service-area {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #volunteer-page-cta {
   @include page-header;
@@ -2182,8 +2186,16 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       }
     }
   }
+  /* Volunteer Page Service Area */ 
   #volunteer-page-locations {
-    width: 100%;
+    .volunteer-page-service-area {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      .volunteer-page-locations-container {
+        width: 84.7%;
+      }
+    }
   }
     /* Get Involved Page */ 
     #get-involved-page-cta {
