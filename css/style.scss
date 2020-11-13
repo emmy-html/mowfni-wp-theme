@@ -753,7 +753,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
 /* Donation Page */ 
 #donation-page {
   @include page-header;
-  background: $light-blue;
+  background: #fff;
   color: $dark-blue;
   .donation-span {
     height: 300px;
@@ -816,7 +816,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       /* add a background to the question if it's clicked on & when you move the mouse over it */
       .active,
       .accordion:hover {
-        background: #fff;
+        background: $light-blue;
         color: $dark-blue;
       }
       .accordion:after {
@@ -837,6 +837,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         color: $dark-blue;
         display: none;
         overflow: hidden;
+        text-align: left;
       }
     }
   }
@@ -856,7 +857,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       border-bottom: 2px solid $lime-green;
       text-transform: none;
       &:hover {
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid $light-blue;
       }
     }
     .button-container {
@@ -865,9 +866,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       a:visited {
         text-transform: uppercase;
         border-bottom: none;
-        &:hover {
-          background: #fff;
-        }
       }
     }
   }
@@ -1201,7 +1199,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       margin: 0px;
     }
     .past-events-page-content {
-      background: $light-blue;
+      background: #fff;
       color: $dark-blue;
       padding: 20px 0px;
       .content-wrapper {
@@ -2046,7 +2044,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         }
       }
       .donation-page-donor-support {
-        background: $light-blue;
+        background: #fff;
         width: 55%;
         margin: 0 auto;
       }

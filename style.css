@@ -1675,7 +1675,7 @@ footer {
 
 /* Donation Page */
 #donation-page {
-  background: #00b5c2;
+  background: #fff;
   color: #003952; }
   #donation-page h1 {
     background: #a9cf38;
@@ -1765,7 +1765,7 @@ footer {
         transition: 0.4s; }
       #donation-page .donation-page-content-container .faq-container .active,
       #donation-page .donation-page-content-container .faq-container .accordion:hover {
-        background: #fff;
+        background: #00b5c2;
         color: #003952; }
       #donation-page .donation-page-content-container .faq-container .accordion:after {
         content: '\02795';
@@ -1781,7 +1781,8 @@ footer {
         padding: 0 18px;
         color: #003952;
         display: none;
-        overflow: hidden; }
+        overflow: hidden;
+        text-align: left; }
   #donation-page .donation-page-donor-support {
     margin: 10px 0px;
     padding: 10px 0px; }
@@ -1797,16 +1798,13 @@ footer {
       text-transform: none; }
       #donation-page .donation-page-donor-support a:link:hover,
       #donation-page .donation-page-donor-support a:visited:hover {
-        border-bottom: 2px solid #fff; }
+        border-bottom: 2px solid #00b5c2; }
     #donation-page .donation-page-donor-support .button-container {
       margin: 20px; }
       #donation-page .donation-page-donor-support .button-container a:link,
       #donation-page .donation-page-donor-support .button-container a:visited {
         text-transform: uppercase;
         border-bottom: none; }
-        #donation-page .donation-page-donor-support .button-container a:link:hover,
-        #donation-page .donation-page-donor-support .button-container a:visited:hover {
-          background: #fff; }
 
 #donation-page-gift-impact {
   background: #fff;
@@ -2316,7 +2314,7 @@ footer {
   padding: 20px;
   margin: 0px; }
 #past-events-page .past-events-page-content {
-  background: #00b5c2;
+  background: #fff;
   color: #003952;
   padding: 20px 0px; }
   #past-events-page .past-events-page-content .content-wrapper {
@@ -3331,7 +3329,7 @@ footer {
         background: none;
         padding: 10px 0px; }
     #donation-page .donation-page-content-container .donation-page-donor-support {
-      background: #00b5c2;
+      background: #fff;
       width: 55%;
       margin: 0 auto; }
   #donation-page .content-wrapper h2 {
