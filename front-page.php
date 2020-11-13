@@ -5,22 +5,7 @@
 echo do_shortcode('[smartslider3 slider="3"]');
 ?>
 </section>
-<section id="cta">
-      <h1>COVID-19 <span>Relief</span></h1>
-      <div class="content-wrapper">
-        <p>During this national emergency, we are delivering additional meals to our most vulnerable communities, and we need your help!</p>
-        <div class="options-container">
-          <div class="button-container">
-            <a href="#" target="_blank" class="rounded-blue-button">Volunteer</a>
-          </div>
-          <div class="button-container">
-            <a href="#" target="_blank" class="rounded-green-button">Donate</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="our-impact">
+<section id="our-impact">
       <div class="content-wrapper">
         <h1>Our
           <span>Impact</span>
@@ -47,12 +32,25 @@ echo do_shortcode('[smartslider3 slider="3"]');
           </article>
         </div>
     </section>
-
+<section id="cta">
+      <h1>COVID-19 <span>Relief</span></h1>
+      <div class="content-wrapper">
+        <p>During this national emergency, we are delivering additional meals to our most vulnerable communities, and we need your help!</p>
+        <div class="options-container">
+          <div class="button-container">
+            <a href="#" target="_blank" class="rounded-blue-button">Volunteer</a>
+          </div>
+          <div class="button-container">
+            <a href="#" target="_blank" class="rounded-green-button">Donate</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="popover">
       <div class="popover-content fade-in">
         <div class="content-wrapper">
         <h1>Help Homebound Seniors</h1>
-        <h2>and provide shelf-stable meals during COVID-19.</h2>
+        <h2>During COVID-19.</h2>
         <div class="donation-form-container">
           
           <p>$</p> <input class="donation-form-filler">
@@ -70,7 +68,7 @@ echo do_shortcode('[smartslider3 slider="3"]');
       </div>
         <div class="meals-content-container">
           <article>
-            <i class="fas fa-car fa-4x"></i>
+            <i class="fas fa-car fa-3x"></i>
             <h4>
               Meal Pick Up
             </h4>
@@ -80,7 +78,7 @@ echo do_shortcode('[smartslider3 slider="3"]');
             </div>
           </article>
           <article>
-            <i class="fas fa-utensils fa-4x"></i>
+            <i class="fas fa-utensils fa-3x"></i>
             <h4>
               Our Menus
             </h4>
@@ -90,7 +88,7 @@ echo do_shortcode('[smartslider3 slider="3"]');
             </div>
           </article>
           <article>
-            <i class="fas fa-check-circle fa-4x"></i>
+            <i class="fas fa-check-circle fa-3x"></i>
             <h4>
               Easy Apply
             </h4>
@@ -111,15 +109,15 @@ echo do_shortcode('[smartslider3 slider="3"]');
       <div class="involvement-cta-content">
         <div class="content-wrapper">
           <article>
-            <img src="<?php bloginfo('template_url'); ?>/img/donate.png" alt="Illustration of outstretched hand with money symbol" />
-            <h3>Become A
+          <i class="fas fa-hand-holding-usd fa-3x"></i>
+          <h3>Become A
               <span>Monthly Donor</span>
             </h3>
             <p>Generous donors who are able to give monthly provide a steady and reliable source of contributions. Thank you to all of our donors, monthly or one-time, who help ensure that No Older Adult Goes Hungry.</p>
           </article>
           <article>
-            <img src="<?php bloginfo('template_url'); ?>/img/volunteer.png" alt="Illustration of outstretched hand with money symbol" />
-            <h3>Volunteer <span>
+          <i class="fas fa-hands-helping fa-3x"></i>
+          <h3>Volunteer <span>
               With Us</span></h3>
             <p>Volunteering for Meals on Wheels is a great way to make a huge impact in a short amount of time. Sign up today and find out how easy and rewarding it is to bring nutrition and independence to your neighbors!</p>
           </article>

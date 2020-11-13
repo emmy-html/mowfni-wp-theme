@@ -43,6 +43,7 @@
     }
 }
 @mixin section-header {
+  background: $dark-blue;
     h1 {
         color: #fff;
         padding: 20px 0px;

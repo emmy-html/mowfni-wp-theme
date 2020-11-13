@@ -313,8 +313,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     padding-bottom: 20px;
     h1 {
       background: $dark-blue;
-      border-bottom: 20px solid $purple;
-      border-top: 20px solid $purple;
     }
     p {
       font-size: 1.25rem;
@@ -383,9 +381,13 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     @include section-header;
     background: $dark-blue;
     .involvement-cta-content {
-      background: $light-blue;
+      background: #fff;
       text-align: center;
+      &:hover {
+        background: #fff;
+      }
       .content-wrapper {
+        @include fontawesome-icon;
         padding: 25px 0px;
       }
       article {
@@ -399,6 +401,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
           font-size: 1.95rem;
           font-weight: 600;
           line-height: 1.75rem;
+          margin-top: 10px;
           span {
             display: block;
           }
@@ -414,7 +417,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   /* Home Delivered Meals Section */ 
   #meals {
     @include section-header;
-    background: $dark-blue;
     .meals-content-container {
       color: $dark-blue;
       display: flex;
@@ -422,24 +424,19 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       text-align: center;
     }
     article {
+      @include fontawesome-icon;
+      background: #fff;
       display: flex;
       flex-direction: column;
       height: 300px;
       justify-content: center;
       align-items: center;
-      &:nth-of-type(odd) {
-        background: $lime-green;
-      }
-      &:nth-of-type(even) {
-        background: $light-blue;
-      }
-      i {
-        padding-bottom: 15px;
-      }
+      padding: 20px 0px;
       h4 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 1.5rem;
+        margin-top: 10px;
         span {
           display: block;
           font-size: 1.5rem;
@@ -447,7 +444,9 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         }
       }
       p {
-        padding: 0px 10px;
+        margin: 0;
+        padding: 10px;
+        width: 300px;
       }
       ol {
         li {
@@ -1329,6 +1328,10 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         background: $light-blue;
         width: 100%;
         height: 120px;
+        a:link,
+        a:visited {
+          border-bottom: none;
+        }
       }
       &:nth-of-type(2) {
         background: $lime-green;
@@ -1388,40 +1391,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     aside {
       padding: 20px 0px;
       width: 100%;
-      &:nth-of-type(1) {
-        background: $light-blue;
-      }
-      &:nth-of-type(2) {
-        background: #fff;
-      }
-      &:nth-of-type(3) {
-        background: $lime-green;
-      }
-      &:nth-last-of-type(1) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: $dark-blue;
-        h2 {
-          color: #fff;
-          font-size: 2.5rem;
-          line-height: 2.5rem;
-        }
-        h3 {
-          color: $lime-green;
-          font-size: 2.5rem;
-          line-height: 2.5rem;
-          margin: 0px;
-        }
-        &:hover {
-          background: $light-blue;
-          transition: 1s background;
-          h2, h3 {
-            color: $dark-blue;
-          }
-        }
-      }
     }
   }
 }
@@ -1695,7 +1664,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       background: $dark-blue;
       color: #fff;
       width: 100%;
-      height: 300px;
       h1 {
         background: $dark-blue;
         color: #fff;
@@ -1733,15 +1701,10 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     flex-direction: column;
     article {
       @include fontawesome-icon;
+      background: #fff;
       color: $dark-blue;
       width: 100%;
       padding: 30px 0px;
-      &:nth-of-type(even) {
-        background: $lime-green;
-      }
-      &:nth-of-type(odd) {
-        background: $light-blue;
-      }
       h2 {
         font-weight: 700;
         padding-bottom: 15px;
@@ -1892,8 +1855,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
           align-items: center;
         }
         article {
-          min-width: 400px;
-          max-width: 420px;
+          width: 35%;
         }
       }
     }
@@ -1903,14 +1865,12 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         display: flex;
         flex-flow: row wrap;
         article {
+          @include fontawesome-icon;
+          background: #fff;
           width: 33.3%;
           height: 400px;
-          &:nth-of-type(3) {
-            background: $lime-green;
-          }
           p {
-            min-width: 300px;
-            max-width: 500px;
+            width: 80%;
           }
         }
       }
@@ -2214,20 +2174,10 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       align-items: center;
       padding: 0px;
       aside {
-        width: 50%;
-        height: 310px;
-        &:nth-of-type(1) {
-          height: 310px;
-        }
-        &:nth-of-type(2) {
-          height: 310px;
-        }
-        &:nth-of-type(3) {
-          background: #fff;
-          height: 120px;
-        }
-        &:nth-of-type(4) {
-          height: 120px;          
+        width: 33.3%;
+        height: 420px;
+        i {
+          margin-top: 40px;
         }
       }
     }
@@ -2373,7 +2323,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         flex-direction: row;
         .single-mow-location-page-map {
           width: 70%;
-          height: 400px;
         }
         .single-mow-location-page-meal-pickup {
           width: 30%;
@@ -2383,15 +2332,16 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     /* Single MOW Location Page Additional Info Section */
     #single-mow-location-page-additional-info {
       .single-mow-location-page-additional-info-container {
+        background: #fff;
         display: flex;
         flex-flow: row nowrap;
+        justify-content: space-around;
         article {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 50%;
-          height: 400px;
+          width: 45%;
         }
       }
     }
@@ -2410,9 +2360,9 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       .popover-content {
         border-radius: 15px 0px 0px 15px;
         width: 325px;
-        height: 250px;
+        height: 170px;
         position: absolute;
-        top: 700px;
+        top: 990px;
         right: 0px;
         padding: 0px !important;
         .content-wrapper {

@@ -1139,6 +1139,7 @@ main a:visited {
 
 /* COVID CTA */
 #cta {
+  background: #003952;
   background: #fff;
   color: #003952;
   padding-bottom: 20px; }
@@ -1149,9 +1150,7 @@ main a:visited {
     #cta h1 span {
       color: #a9cf38; }
   #cta h1 {
-    background: #003952;
-    border-bottom: 20px solid #B089EC;
-    border-top: 20px solid #B089EC; }
+    background: #003952; }
   #cta p {
     font-size: 1.25rem;
     font-weight: 700;
@@ -1180,6 +1179,7 @@ main a:visited {
 
 /* Our Impact */
 #our-impact {
+  background: #003952;
   background: #003952; }
   #our-impact h1 {
     color: #fff;
@@ -1221,6 +1221,7 @@ main a:visited {
 
 /* Involvment Call to Action */
 #involvement-cta {
+  background: #003952;
   background: #003952; }
   #involvement-cta h1 {
     color: #fff;
@@ -1229,10 +1230,23 @@ main a:visited {
     #involvement-cta h1 span {
       color: #a9cf38; }
   #involvement-cta .involvement-cta-content {
-    background: #00b5c2;
+    background: #fff;
     text-align: center; }
+    #involvement-cta .involvement-cta-content:hover {
+      background: #fff; }
     #involvement-cta .involvement-cta-content .content-wrapper {
       padding: 25px 0px; }
+      #involvement-cta .involvement-cta-content .content-wrapper i {
+        background: #003952;
+        color: #a9cf38;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        border-radius: 200px;
+        margin: 0 auto; }
     #involvement-cta .involvement-cta-content article img {
       width: 150px;
       height: 150px;
@@ -1241,7 +1255,8 @@ main a:visited {
       color: #003952;
       font-size: 1.95rem;
       font-weight: 600;
-      line-height: 1.75rem; }
+      line-height: 1.75rem;
+      margin-top: 10px; }
       #involvement-cta .involvement-cta-content article h3 span {
         display: block; }
     #involvement-cta .involvement-cta-content article p {
@@ -1264,27 +1279,37 @@ main a:visited {
     flex-direction: column;
     text-align: center; }
   #meals article {
+    background: #fff;
     display: flex;
     flex-direction: column;
     height: 300px;
     justify-content: center;
-    align-items: center; }
-    #meals article:nth-of-type(odd) {
-      background: #a9cf38; }
-    #meals article:nth-of-type(even) {
-      background: #00b5c2; }
+    align-items: center;
+    padding: 20px 0px; }
     #meals article i {
-      padding-bottom: 15px; }
+      background: #003952;
+      color: #a9cf38;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      border-radius: 200px;
+      margin: 0 auto; }
     #meals article h4 {
       font-size: 1.5rem;
       font-weight: 700;
-      line-height: 1.5rem; }
+      line-height: 1.5rem;
+      margin-top: 10px; }
       #meals article h4 span {
         display: block;
         font-size: 1.5rem;
         font-weight: 400; }
     #meals article p {
-      padding: 0px 10px; }
+      margin: 0;
+      padding: 10px;
+      width: 300px; }
     #meals article ol li {
       text-align: justify; }
   #meals .rounded-blue-button {
@@ -2497,6 +2522,9 @@ footer {
         background: #00b5c2;
         width: 100%;
         height: 120px; }
+        #volunteer-page-hero .volunteer-page-options article:nth-of-type(1) a:link,
+        #volunteer-page-hero .volunteer-page-options article:nth-of-type(1) a:visited {
+          border-bottom: none; }
       #volunteer-page-hero .volunteer-page-options article:nth-of-type(2) {
         background: #a9cf38;
         width: 100%;
@@ -2564,32 +2592,6 @@ footer {
     #volunteer-page-opportunities .volunteer-page-opportunities-container aside {
       padding: 20px 0px;
       width: 100%; }
-      #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-of-type(1) {
-        background: #00b5c2; }
-      #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-of-type(2) {
-        background: #fff; }
-      #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-of-type(3) {
-        background: #a9cf38; }
-      #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-last-of-type(1) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #003952; }
-        #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-last-of-type(1) h2 {
-          color: #fff;
-          font-size: 2.5rem;
-          line-height: 2.5rem; }
-        #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-last-of-type(1) h3 {
-          color: #a9cf38;
-          font-size: 2.5rem;
-          line-height: 2.5rem;
-          margin: 0px; }
-        #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-last-of-type(1):hover {
-          background: #00b5c2;
-          transition: 1s background; }
-          #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-last-of-type(1):hover h2, #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-last-of-type(1):hover h3 {
-            color: #003952; }
 
 #volunteer-page-locations {
   background: #fff;
@@ -3053,8 +3055,7 @@ footer {
   #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-map {
     background: #003952;
     color: #fff;
-    width: 100%;
-    height: 300px; }
+    width: 100%; }
     #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-map h1 {
       background: #003952;
       color: #fff; }
@@ -3082,6 +3083,7 @@ footer {
   align-items: center;
   flex-direction: column; }
   #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article {
+    background: #fff;
     color: #003952;
     width: 100%;
     padding: 30px 0px; }
@@ -3096,10 +3098,6 @@ footer {
       text-align: center;
       border-radius: 200px;
       margin: 0 auto; }
-    #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article:nth-of-type(even) {
-      background: #a9cf38; }
-    #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article:nth-of-type(odd) {
-      background: #00b5c2; }
     #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article h2 {
       font-weight: 700;
       padding-bottom: 15px; }
@@ -3220,21 +3218,29 @@ footer {
     justify-content: space-evenly;
     align-items: center; }
   #involvement-cta .involvement-cta-content article {
-    min-width: 400px;
-    max-width: 420px; }
+    width: 35%; }
 
   /* Home Delivered Meals Section */
   #meals .meals-content-container {
     display: flex;
     flex-flow: row wrap; }
     #meals .meals-content-container article {
+      background: #fff;
       width: 33.3%;
       height: 400px; }
-      #meals .meals-content-container article:nth-of-type(3) {
-        background: #a9cf38; }
+      #meals .meals-content-container article i {
+        background: #003952;
+        color: #a9cf38;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        border-radius: 200px;
+        margin: 0 auto; }
       #meals .meals-content-container article p {
-        min-width: 300px;
-        max-width: 500px; }
+        width: 80%; }
 
   /* Footer */
   footer .text-logo {
@@ -3469,17 +3475,10 @@ footer {
     align-items: center;
     padding: 0px; }
     #volunteer-page-opportunities .volunteer-page-opportunities-container aside {
-      width: 50%;
-      height: 310px; }
-      #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-of-type(1) {
-        height: 310px; }
-      #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-of-type(2) {
-        height: 310px; }
-      #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-of-type(3) {
-        background: #fff;
-        height: 120px; }
-      #volunteer-page-opportunities .volunteer-page-opportunities-container aside:nth-of-type(4) {
-        height: 120px; }
+      width: 33.3%;
+      height: 420px; }
+      #volunteer-page-opportunities .volunteer-page-opportunities-container aside i {
+        margin-top: 40px; }
 
   #volunteer-page-locations {
     width: 100%; }
@@ -3587,22 +3586,22 @@ footer {
     display: flex;
     flex-direction: row; }
     #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-map {
-      width: 70%;
-      height: 400px; }
+      width: 70%; }
     #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup {
       width: 30%; }
 
   /* Single MOW Location Page Additional Info Section */
   #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container {
+    background: #fff;
     display: flex;
-    flex-flow: row nowrap; }
+    flex-flow: row nowrap;
+    justify-content: space-around; }
     #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 50%;
-      height: 400px; }
+      width: 45%; }
 
   #annual-report-page-template .annual-report-page-container {
     display: flex;
@@ -3616,9 +3615,9 @@ footer {
     #popover .popover-content {
       border-radius: 15px 0px 0px 15px;
       width: 325px;
-      height: 250px;
+      height: 170px;
       position: absolute;
-      top: 700px;
+      top: 990px;
       right: 0px;
       padding: 0px !important; }
       #popover .popover-content .content-wrapper h1 {
