@@ -34,4 +34,13 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+  // home page topbar
+function closeTopbar() {
+  var topbar = document.getElementById("home-topbar");
+  var navigation = document.getElementById("header-nav");
+  var container = document.getElementById("body-adjust");
+  topbar.classList.add("hide-topbar");
+  navigation.classList.add("adjust-height");
+  container.classList.add("adjust-container");
+}
   document.getElementById("defaultTab").click();

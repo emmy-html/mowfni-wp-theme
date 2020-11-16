@@ -2424,6 +2424,52 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         }
       }
     }
+    header {
+      margin-top: 25px;
+    }
+    .topbar {
+      background: #000;
+      color: #fff;
+      font-family: $heading-font;
+      font-size: .75rem;
+      height: 25px;
+      padding: 5px;
+      position: fixed;
+      text-align: center;
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+      a:link,
+      a:visited {
+        color: $lime-green;
+        border-bottom: 1px solid $light-blue;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover {
+          color: #fff;
+          transition: 1s color;
+        }
+      }
+      button {
+        background: #000;
+        border: none;
+        color: $lime-green;
+        font-size: .65rem;
+        font-weight: 700;
+        margin-left: 5px;
+        &:hover {
+          color: #fff;
+          cursor: pointer;
+          transition: 1s color;
+        }
+      }
+    }
+    .hide-topbar {
+      display: none;
+    }
+    .adjust-height {
+      margin-top: 0px;
+    }
   }
   /* wordpress specific styles */ 
   .wp-block-video {
@@ -2480,8 +2526,11 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     color: $dark-blue;
   }
   /* smart slider */ 
- main {
-    padding-top: 70px;
+  #body-adjust {
+    margin-top: 90px;
+  }
+  .adjust-container {
+    margin-top: 70px !important;
   }
   #popover {
     background: #fff;

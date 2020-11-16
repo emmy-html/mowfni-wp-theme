@@ -3656,7 +3656,50 @@ footer {
     margin: 0 auto; }
   #hidden-donation-page-template .content-wrapper .donation-container {
     margin: 0 auto;
-    padding-left: 60px; } }
+    padding-left: 60px; }
+
+  header {
+    margin-top: 25px; }
+
+  .topbar {
+    background: #000;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: .75rem;
+    height: 25px;
+    padding: 5px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important; }
+    .topbar a:link,
+    .topbar a:visited {
+      color: #a9cf38;
+      border-bottom: 1px solid #00b5c2;
+      font-weight: 500;
+      text-decoration: none; }
+      .topbar a:link:hover,
+      .topbar a:visited:hover {
+        color: #fff;
+        transition: 1s color; }
+    .topbar button {
+      background: #000;
+      border: none;
+      color: #a9cf38;
+      font-size: .65rem;
+      font-weight: 700;
+      margin-left: 5px; }
+      .topbar button:hover {
+        color: #fff;
+        cursor: pointer;
+        transition: 1s color; }
+
+  .hide-topbar {
+    display: none; }
+
+  .adjust-height {
+    margin-top: 0px; } }
 /* wordpress specific styles */
 .wp-block-video {
   width: 40% !important;
@@ -3730,8 +3773,11 @@ footer {
       color: #003952; }
 
 /* smart slider */
-main {
-  padding-top: 70px; }
+#body-adjust {
+  margin-top: 90px; }
+
+.adjust-container {
+  margin-top: 70px !important; }
 
 #popover {
   background: #fff; }
