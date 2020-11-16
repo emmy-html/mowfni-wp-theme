@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main>
+<main id="front-page">
 <section id="smart-slide-hero">
 <?php
 echo do_shortcode('[smartslider3 slider="3"]');
@@ -55,7 +55,7 @@ echo do_shortcode('[smartslider3 slider="3"]');
           
           <p>$</p> <input class="donation-form-filler">
           </input> <p>USD/MO</p>
-          <a href="https://donorbox.org/0320em?default_interval=o" class="donate-button" target="_blank">Donate</a>
+          <a href="https://donorbox.org/make-sure-no-older-adult-goes-hungry?default_interval=o&amount=30" class="donate-button" target="_blank">Donate</a>
         </div>
       </div>
       </div>  

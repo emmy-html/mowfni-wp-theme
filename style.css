@@ -3827,6 +3827,44 @@ div#n2-ss-3 .n2-ss-button-container:hover, div#n2-ss-3 .n2-ss-button-container a
       text-transform: none;
       padding: 20px 0px; }
 
+/* pop up box */
+#sgpb-popup-dialog-main-div {
+  background-color: #a9cf38 !important;
+  color: #003952; }
+  #sgpb-popup-dialog-main-div .sg-popup-builder-content h1 {
+    line-height: 2rem; }
+  #sgpb-popup-dialog-main-div .sg-popup-builder-content h2 {
+    text-transform: none; }
+
+.pop-up-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .pop-up-button-container a:link,
+  .pop-up-button-container a:visited {
+    border-bottom: none;
+    color: #003952;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .pop-up-button-container a:link:hover,
+    .pop-up-button-container a:visited:hover {
+      border-bottom: none; }
+  .pop-up-button-container a:link,
+  .pop-up-button-container a:visited {
+    background: #00b5c2;
+    border: 3px solid #00b5c2;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px 0px; }
+    .pop-up-button-container a:link:hover,
+    .pop-up-button-container a:visited:hover {
+      background-color: transparent !important;
+      border: 3px solid #003952;
+      transition: 1s background-color; }
+
 /*
 * Hide only visually, but have it available for screen readers:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility

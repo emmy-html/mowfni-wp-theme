@@ -2367,35 +2367,35 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         }
       }
     }
-    #popover {
-      padding: 0px !important;
-      .popover-content {
-        border-radius: 15px 0px 0px 15px;
-        width: 325px;
-        height: 170px;
-        position: absolute;
-        top: 990px;
-        right: 0px;
+      #popover {
         padding: 0px !important;
-        .content-wrapper {
-          h1 {
-            font-size: 1.75rem;
-            line-height: 1.65rem;
-          }
-          h2 {
-            padding-bottom: 10px;
-          }
-          .donation-form-container {
-            width: 240px;
-            margin: 0 auto;
-            .donation-form-filler {
-              width: 23px;
+        .popover-content {
+          border-radius: 15px 0px 0px 15px;
+          width: 325px;
+          height: 170px;
+          position: absolute;
+          top: 990px;
+          right: 0px;
+          padding: 0px !important;
+          .content-wrapper {
+            h1 {
+              font-size: 1.75rem;
+              line-height: 1.65rem;
+            }
+            h2 {
+              padding-bottom: 10px;
+            }
+            .donation-form-container {
+              width: 240px;
+              margin: 0 auto;
+              .donation-form-filler {
+                width: 23px;
+              }
             }
           }
+  
         }
-
       }
-    }
     #hidden-donation-page-template {
       .donation-page-content-container {
           display: flex;
@@ -2579,6 +2579,35 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         line-height: 2rem;
         text-transform: none;
         padding: 20px 0px;
+      }
+    }
+  }
+  /* pop up box */ 
+  #sgpb-popup-dialog-main-div {
+    background-color: $lime-green !important;
+    color: $dark-blue;
+    .sg-popup-builder-content {
+      h1 {
+        line-height: 2rem;
+      }
+      h2 {
+        text-transform: none;
+      }
+    }
+  }
+  .pop-up-button-container {
+    @include button-container;
+    a:link,
+    a:visited {
+      background: $light-blue;
+      border: 3px solid $light-blue;
+      border-radius: $pill-radius;
+      font-size: 1.5rem;
+      padding: 10px 0px;
+      &:hover {
+        background-color: transparent !important;
+        border: 3px solid $dark-blue;
+        transition: 1s background-color;
       }
     }
   }
