@@ -974,6 +974,71 @@ textarea {
   src: url(/fonts/Poppins-Regular.ttf); }
 /* Transitions */
 /* Universal Styles */
+.topbar {
+  display: none; }
+
+.sticky {
+  z-index: 9999;
+  position: fixed;
+  top: 600px; }
+
+#popover {
+  background: #fff;
+  visibility: hidden; }
+  #popover .popover-content {
+    background: #a9cf38;
+    color: #003952;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0px; }
+    #popover .popover-content button {
+      background: none;
+      border: none;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-size: .75rem;
+      font-weight: 900;
+      margin-left: 280px; }
+    #popover .popover-content h1 {
+      font-size: 1.5rem;
+      line-height: 1.25rem; }
+    #popover .popover-content h2 {
+      padding-top: 5px;
+      padding-bottom: 10px; }
+    #popover .popover-content .donation-form-container {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      margin: 0 auto;
+      max-width: 300px; }
+      #popover .popover-content .donation-form-container p {
+        margin: 0px;
+        padding: 0px 5px; }
+      #popover .popover-content .donation-form-container .donation-form-filler {
+        border: none;
+        padding: 10px;
+        max-width: 100px; }
+      #popover .popover-content .donation-form-container .donate-button {
+        background: #003952;
+        border-bottom: none;
+        padding: 10px;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none; }
+        #popover .popover-content .donation-form-container .donate-button:hover {
+          background: #00b5c2;
+          border-bottom: none;
+          color: #003952;
+          transition: 1s background-color;
+          transition: 1s color; }
+
 body {
   background: #003952;
   color: #fff;
@@ -3619,18 +3684,18 @@ footer {
       margin: 160px 0px 0px 30px; }
 
   #popover {
-    padding: 0px !important; }
+    padding: 0px !important;
+    visibility: visible; }
     #popover .popover-content {
       border-radius: 15px 0px 0px 15px;
       width: 325px;
       height: 170px;
-      position: absolute;
-      top: 990px;
       right: 0px;
       padding: 0px !important; }
       #popover .popover-content .content-wrapper h1 {
         font-size: 1.75rem;
-        line-height: 1.65rem; }
+        line-height: 1.65rem;
+        margin-top: -20px !important; }
       #popover .popover-content .content-wrapper h2 {
         padding-bottom: 10px; }
       #popover .popover-content .content-wrapper .donation-form-container {
@@ -3664,6 +3729,7 @@ footer {
   .topbar {
     background: #000;
     color: #fff;
+    display: block;
     font-family: "Poppins", sans-serif;
     font-size: .75rem;
     height: 25px;
@@ -3779,52 +3845,6 @@ footer {
 .adjust-container {
   margin-top: 70px !important; }
 
-#popover {
-  background: #fff; }
-  #popover .popover-content {
-    background: #a9cf38;
-    color: #003952;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px 0px; }
-    #popover .popover-content h1 {
-      font-size: 1.5rem;
-      line-height: 1.25rem; }
-    #popover .popover-content h2 {
-      padding-top: 5px;
-      padding-bottom: 10px; }
-    #popover .popover-content .donation-form-container {
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row nowrap;
-      margin: 0 auto;
-      max-width: 300px; }
-      #popover .popover-content .donation-form-container p {
-        margin: 0px;
-        padding: 0px 5px; }
-      #popover .popover-content .donation-form-container .donation-form-filler {
-        border: none;
-        padding: 10px;
-        max-width: 100px; }
-      #popover .popover-content .donation-form-container .donate-button {
-        background: #003952;
-        border-bottom: none;
-        padding: 10px;
-        color: #fff;
-        font-family: "Poppins", sans-serif;
-        text-transform: uppercase; }
-        #popover .popover-content .donation-form-container .donate-button:hover {
-          background: #00b5c2;
-          border-bottom: none;
-          color: #003952;
-          transition: 1s background-color;
-          transition: 1s color; }
-
 /* slider button */
 div#n2-ss-3 .n2-ss-button-container:hover, div#n2-ss-3 .n2-ss-button-container a:hover {
   background: #00b5c2;
@@ -3910,6 +3930,10 @@ div#n2-ss-3 .n2-ss-button-container:hover, div#n2-ss-3 .n2-ss-button-container a
       background-color: transparent !important;
       border: 3px solid #003952;
       transition: 1s background-color; }
+
+.hide-popover {
+  display: none !important;
+  visibility: hidden !important; }
 
 /*
 * Hide only visually, but have it available for screen readers:

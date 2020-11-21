@@ -42,5 +42,9 @@ function closeTopbar() {
   topbar.classList.add("hide-topbar");
   navigation.classList.add("adjust-height");
   container.classList.add("adjust-container");
-}
+}  
+  function closePopover() {
+    var popover = document.getElementById("popover");
+    popover.classList.add("hide-topbar");
+  }
   document.getElementById("defaultTab").click();

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 <main id="front-page">
 <section id="smart-slide-hero">
 <?php
@@ -45,20 +45,6 @@ echo do_shortcode('[smartslider3 slider="3"]');
           </div>
         </div>
       </div>
-    </section>
-    <section id="popover">
-      <div class="popover-content fade-in">
-        <div class="content-wrapper">
-        <h1>Help Homebound Seniors</h1>
-        <h2>During COVID-19.</h2>
-        <div class="donation-form-container">
-          
-          <p>$</p> <input class="donation-form-filler">
-          </input> <p>USD/MO</p>
-          <a href="https://donorbox.org/make-sure-no-older-adult-goes-hungry?default_interval=o&amount=30" class="donate-button" target="_blank">Donate</a>
-        </div>
-      </div>
-      </div>  
     </section>
     <section id="meals">
       <div class="content-wrapper">
