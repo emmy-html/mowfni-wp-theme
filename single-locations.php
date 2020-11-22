@@ -41,6 +41,5 @@
             </div>
             </div>
             </aside> 
-
 <?php get_template_part( 'entry' ); ?>
 <?php endwhile; endif; ?>

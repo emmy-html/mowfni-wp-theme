@@ -1,22 +1,22 @@
 <?php
-add_action( 'after_setup_theme', 'blankslate_setup' );
-function blankslate_setup() {
-load_theme_textdomain( 'blankslate', get_template_directory() . '/languages' );
+add_action( 'after_setup_theme', 'mowfni_setup' );
+function mowfni_setup() {
+load_theme_textdomain( 'mowfni', get_template_directory() . '/languages' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'html5', array( 'search-form' ) );
 global $content_width;
 if ( ! isset( $content_width ) ) { $content_width = 1920; }
-register_nav_menus( array( 'main-menu' => esc_html__( 'Main Menu', 'blankslate' ) ) );
+register_nav_menus( array( 'main-menu' => esc_html__( 'Main Menu', 'mowfni' ) ) );
 }
-add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
-function blankslate_load_scripts() {
-wp_enqueue_style( 'blankslate-style', get_stylesheet_uri() );
+add_action( 'wp_enqueue_scripts', 'mowfni_load_scripts' );
+function mowfni_load_scripts() {
+wp_enqueue_style( 'mowfni-style', get_stylesheet_uri() );
 wp_enqueue_script( 'jquery' );
 }
-add_action( 'wp_footer', 'blankslate_footer_scripts' );
-function blankslate_footer_scripts() {
+add_action( 'wp_footer', 'mowfni_footer_scripts' );
+function mowfni_footer_scripts() {
 ?>
 <script>
 jQuery(document).ready(function ($) {
@@ -44,41 +44,41 @@ $("html").addClass("opera");
 </script>
 <?php
 }
-add_filter( 'document_title_separator', 'blankslate_document_title_separator' );
-function blankslate_document_title_separator( $sep ) {
+add_filter( 'document_title_separator', 'mowfni_document_title_separator' );
+function mowfni_document_title_separator( $sep ) {
 $sep = '|';
 return $sep;
 }
-add_filter( 'the_title', 'blankslate_title' );
-function blankslate_title( $title ) {
+add_filter( 'the_title', 'mowfni_title' );
+function mowfni_title( $title ) {
 if ( $title == '' ) {
 return '...';
 } else {
 return $title;
 }
 }
-add_filter( 'the_content_more_link', 'blankslate_read_more_link' );
-function blankslate_read_more_link() {
+add_filter( 'the_content_more_link', 'mowfni_read_more_link' );
+function mowfni_read_more_link() {
 if ( ! is_admin() ) {
 return ' <a href="' . esc_url( get_permalink() ) . '" class="more-link">...</a>';
 }
 }
-add_filter( 'excerpt_more', 'blankslate_excerpt_read_more_link' );
-function blankslate_excerpt_read_more_link( $more ) {
+add_filter( 'excerpt_more', 'mowfni_excerpt_read_more_link' );
+function mowfni_excerpt_read_more_link( $more ) {
 if ( ! is_admin() ) {
 global $post;
 return ' <a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="more-link">...</a>';
 }
 }
-add_filter( 'intermediate_image_sizes_advanced', 'blankslate_image_insert_override' );
-function blankslate_image_insert_override( $sizes ) {
+add_filter( 'intermediate_image_sizes_advanced', 'mowfni_image_insert_override' );
+function mowfni_image_insert_override( $sizes ) {
 unset( $sizes['medium_large'] );
 return $sizes;
 }
-add_action( 'widgets_init', 'blankslate_widgets_init' );
-function blankslate_widgets_init() {
+add_action( 'widgets_init', 'mowfni_widgets_init' );
+function mowfni_widgets_init() {
 register_sidebar( array(
-'name' => esc_html__( 'Sidebar Widget Area', 'blankslate' ),
+'name' => esc_html__( 'Sidebar Widget Area', 'mowfni' ),
 'id' => 'primary-widget-area',
 'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 'after_widget' => '</li>',
@@ -86,25 +86,25 @@ register_sidebar( array(
 'after_title' => '</h3>',
 ) );
 }
-add_action( 'wp_head', 'blankslate_pingback_header' );
-function blankslate_pingback_header() {
+add_action( 'wp_head', 'mowfni_pingback_header' );
+function mowfni_pingback_header() {
 if ( is_singular() && pings_open() ) {
 printf( '<link rel="pingback" href="%s" />' . "\n", esc_url( get_bloginfo( 'pingback_url' ) ) );
 }
 }
-add_action( 'comment_form_before', 'blankslate_enqueue_comment_reply_script' );
-function blankslate_enqueue_comment_reply_script() {
+add_action( 'comment_form_before', 'mowfni_enqueue_comment_reply_script' );
+function mowfni_enqueue_comment_reply_script() {
 if ( get_option( 'thread_comments' ) ) {
 wp_enqueue_script( 'comment-reply' );
 }
 }
-function blankslate_custom_pings( $comment ) {
+function mowfni_custom_pings( $comment ) {
 ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
 <?php
 }
-add_filter( 'get_comments_number', 'blankslate_comment_count', 0 );
-function blankslate_comment_count( $count ) {
+add_filter( 'get_comments_number', 'mowfni_comment_count', 0 );
+function mowfni_comment_count( $count ) {
 if ( ! is_admin() ) {
 global $id;
 $get_comments = get_comments( 'status=approve&post_id=' . $id );
@@ -128,31 +128,32 @@ function custom_post_type() {
  
   // Set UI labels for Custom Post Type
       $labels = array(
-          'name'                => _x( 'locations', 'Post Type General Name', 'mowfni-parent' ),
-          'singular_name'       => _x( 'Location', 'Post Type Singular Name', 'mowfni-parent' ),
-          'menu_name'           => __( 'locations', 'mowfni-parent' ),
-          'parent_item_colon'   => __( 'Parent Location', 'mowfni-parent' ),
-          'all_items'           => __( 'All locations', 'mowfni-parent' ),
-          'view_item'           => __( 'View Location', 'mowfni-parent' ),
-          'add_new_item'        => __( 'Add New Location', 'mowfni-parent' ),
-          'add_new'             => __( 'Add New', 'mowfni-parent' ),
-          'edit_item'           => __( 'Edit Location', 'mowfni-parent' ),
-          'update_item'         => __( 'Update Location', 'mowfni-parent' ),
-          'search_items'        => __( 'Search Location', 'mowfni-parent' ),
-          'not_found'           => __( 'Not Found', 'mowfni-parent' ),
-          'not_found_in_trash'  => __( 'Not found in Trash', 'mowfni-parent' ),
+          'name'                => _x( 'Locations', 'Post Type General Name', 'mowfni' ),
+          'singular_name'       => _x( 'Location', 'Post Type Singular Name', 'mowfni' ),
+          'menu_name'           => __( 'C1 Locations', 'mowfni' ),
+          'parent_item_colon'   => __( 'Parent Location', 'mowfni' ),
+          'all_items'           => __( 'All locations', 'mowfni' ),
+          'view_item'           => __( 'View Location', 'mowfni' ),
+          'add_new_item'        => __( 'Add New Location', 'mowfni' ),
+          'add_new'             => __( 'Add New', 'mowfni' ),
+          'edit_item'           => __( 'Edit Location', 'mowfni' ),
+          'update_item'         => __( 'Update Location', 'mowfni' ),
+          'search_items'        => __( 'Search Location', 'mowfni' ),
+          'not_found'           => __( 'Not Found', 'mowfni' ),
+          'not_found_in_trash'  => __( 'Not found in Trash', 'mowfni' ),
       );
        
   // Set other options for Custom Post Type
        
       $args = array(
-          'label'               => __( 'locations', 'mowfni-parent' ),
-          'description'         => __( 'MOW Locations', 'mowfni-parent' ),
+          'label'               => __( 'locations', 'mowfni' ),
+          'description'         => __( 'MOW Locations', 'mowfni' ),
           'labels'              => $labels,
           // Features this CPT supports in Post Editor
           'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
           // You can associate this CPT with a taxonomy or custom taxonomy. 
           'taxonomies'          => array( 'genres' ),
+          'taxonomies' => array('post_tag'),
           /* A hierarchical CPT is like Pages and can have
           * Parent and child items. A non-hierarchical CPT
           * is like Posts.

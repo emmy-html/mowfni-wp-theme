@@ -1,4 +1,4 @@
-<?php /* Template Name: About Meals On Wheels Page */ ?>
+<?php /* Template Name: C1 Grundy County Page */ ?>
 
 <?php get_header(); ?>
 
@@ -24,7 +24,7 @@
                     <div class="map-locations-container">
 
                     <?php 
-                    $args = array( 'post_type' => 'locations', 'posts_per_page' => 100, 'orderby' => 'title',
+                    $args = array( 'post_type' => 'locations', 'tag' => 'c1-grundy-county', 'posts_per_page' => 100, 'orderby' => 'title',
                     'order'   => 'ASC' );
                     $the_query = new WP_Query( $args ); 
                     ?>
