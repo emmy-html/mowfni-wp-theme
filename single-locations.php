@@ -1,35 +1,4 @@
-<?php /* Template Name: About Meals On Wheels Page */ ?>
-
-<?php get_header(); ?>
-
-<main id="content">
-<section id="about-mow-page-hero">
-
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<h1><?php the_title(); ?></h1>
-<section id="about-mow-page-locations">
-            <div class="about-mow-page-locations-content">
-                <article class="map">
-                <?php if( get_field('multi_map') ): ?>
-                    <?php the_field('multi_map'); ?>
-                <?php endif; ?>
-                </article>
-                </article>
-                <article class="map-locations">
-                    <div class="content-wrapper">
-                    <?php if( get_field('general_description') ): ?>
-                    <p><?php the_field('general_description'); ?></p>
-                    <?php endif; ?>
-                    </div>
-                    <div class="map-locations-container">
-
-                    <?php 
-$args = array( 'post_type' => 'locations', 'posts_per_page' => 100 );
-$the_query = new WP_Query( $args ); 
-?>
-<?php if ( $the_query->have_posts() ) : ?>
-<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-<?php the_content(); ?> 
 <aside>
     <div class="content-wrapper">
         <div>
@@ -72,14 +41,6 @@ $the_query = new WP_Query( $args );
             </div>
             </div>
             </aside> 
-<?php wp_reset_postdata(); ?>
-<?php endwhile;  ?>
-<?php endif; ?>
-            </div>
-           
-                    </div>
-                      <?php endwhile; endif; ?>
-</section>
-</main>
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+
+<?php get_template_part( 'entry' ); ?>
+<?php endwhile; endif; ?>
