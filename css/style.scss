@@ -2593,9 +2593,12 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   /* map location descriptions */
   .gmpInfoWindowtitle {
     font-family: $heading-font;
+    padding: 0px !important;
   }
   .egm-marker-iw {
+    color: #000 !important;
     p {
+      color: #000 !important;
       margin: 0;
       padding: 5px 0px;
     }

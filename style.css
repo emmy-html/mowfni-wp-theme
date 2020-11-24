@@ -3805,11 +3805,15 @@ footer {
 
 /* map location descriptions */
 .gmpInfoWindowtitle {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  padding: 0px !important; }
 
-.egm-marker-iw p {
-  margin: 0;
-  padding: 5px 0px; }
+.egm-marker-iw {
+  color: #000 !important; }
+  .egm-marker-iw p {
+    color: #000 !important;
+    margin: 0;
+    padding: 5px 0px; }
 
 /* annual report page template */
 #annual-report-page-template {
