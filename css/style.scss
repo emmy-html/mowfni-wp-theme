@@ -1584,6 +1584,48 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   }
   #about-mow-page-locations {
     @include page-header;
+    .about-mow-page-programs-application {
+      @include fontawesome-icon;
+      @include secondary-page-header;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 20px;
+      &:nth-of-type(even) {
+        background: $light-blue;
+      }
+      p {
+        margin: 0;
+        padding: 0px 20px;
+        text-align: justify;
+      }
+      .ccu-info {
+        color: $dark-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px 0px;
+        img {
+          width: 100%;
+          margin: 0 auto;
+        }
+        p {
+          padding: 0px;
+
+        }
+      }
+      .button-container {
+        width: 300px;
+        margin: 0 auto;
+        .rounded-green-button {
+          @include body-green-button;
+        }
+      }
+    }
     .about-mow-page-locations-content {
       background: #fff;
       color: $dark-blue;
@@ -1604,7 +1646,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
           flex-direction: column;
           .about-mow-page-programs-span {
             @include fontawesome-icon;
-            background: $lime-green;
+            background: #fff;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1618,6 +1660,28 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
               margin: 0;
               padding: 0px 20px;
               text-align: justify;
+            }
+            .ccu-info {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              padding: 10px 0px;
+              img {
+                width: 100%;
+                margin: 0 auto;
+              }
+              p {
+                padding: 0px;
+      
+              }
+            }
+            .button-container {
+              width: 300px;
+              margin: 0 auto;
+              .rounded-green-button {
+                @include body-green-button;
+              }
             }
           }   
       }
@@ -2314,6 +2378,15 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     }
     /* About Meals On Wheels page */
     #about-mow-page-locations {
+      .about-mow-page-programs-application {
+        .ccu-info {
+          img {
+            width: 90%;
+          }
+          display: flex;
+          flex-direction: row;
+        }
+      }
       /* width */
       ::-webkit-scrollbar {
         width: 10px;
@@ -2386,6 +2459,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
               padding: 0px 100px;
             }
             &:nth-of-type(1) {
+              background: $lime-green;
               flex-basis: 50%;
             }
             &:nth-of-type(2) {
@@ -2394,6 +2468,13 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
             &:nth-of-type(3) {
               background: #fff;
               flex-basis: 100%;
+            }
+            .ccu-info {
+              img {
+                width: 90%;
+              }
+              display: flex;
+              flex-direction: row;
             }
           }
         }
@@ -2522,9 +2603,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         }
       }
     }
-    header {
-      margin-top: 25px;
-    }
     .topbar {
       background: #000;
       color: #fff;
@@ -2632,6 +2710,9 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   #body-adjust {
     margin-top: 90px;
   }
+  #body-adjust-main {
+    margin-top: 70px;
+  }
   .adjust-container {
     margin-top: 70px !important;
   }
@@ -2690,6 +2771,8 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         line-height: 2rem;
       }
       h2 {
+        font-size: 1.75rem;
+        line-height: 1.95rem;
         text-transform: none;
       }
     }

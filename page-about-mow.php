@@ -62,7 +62,10 @@
                     </h3>
                     </div>
                     <div>
-                        <h3>Manager:
+                        <?php if( get_field('manager_select') ): ?>
+                        <h3>
+                          <?php the_field('manager_select'); ?>
+                        <?php endif; ?> 
                         <?php if( get_field('location_manager') ): ?>
                         <span><?php the_field('location_manager'); ?></span>
                         <?php endif; ?> 

@@ -26,7 +26,7 @@
       </div>
       </div>  
     </section>
-<header id="header-nav">
+<header id="header-nav" style="margin-top: 25px;">
   <img src="https://i.imgur.com/Kio5ah0.png" width="50" height="50">
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 </header>
