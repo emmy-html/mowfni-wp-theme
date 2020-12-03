@@ -94,11 +94,17 @@
                         <span>the meals cost?</span></h2>
                       <p>There is no cost to participants. We do ask that all participants for a voluntary contribution. No one is ever denied service if they are unable or unwilling to contribute.</p>              
                     </div>
-                    <div class="about-mow-page-programs-span">
-                      <i class="fas fa-car fa-3x"></i>
-                      <h2>How to get 
-                        <span>Meals on Wheels</span></h2>
-                      <p>If you or a loved one is in need of Meals on Wheels, you will need to first contact a case coordinator. Using the locator on this page, enter your zip code to find the nearest Meals on Wheels distribution location. Once you find a location click on its name to be taken to that locations home page. Here you will find contact information the case coordinator for that area as well as the manager of that location. If you have any questions about the proces for getting meals on wheels, our staff will be there to assist you. If you have any other questions, please feel free to contact our main office at (312) 207-5290.</p>
+                    <div class="about-mow-page-programs-span application-section">
+                    <h2>How to get Meals <span>in Cook County</span></h2>
+                      <div class="content-wrapper">
+                        <i class="fas fa-copy fa-3x"></i>
+                          <p style="padding: 20px; text-align: center;">To receive meals at our cafés, you must register first.</p>
+                          <div class="button-container">
+                            <?php if( get_field('c1_application') ): ?>
+                              <a href="<?php the_field('c1_application'); ?>" target="_blank" class="rounded-green-button">Download Application</a>
+                            <?php endif; ?>
+                          </div>
+                      </div>
                     </div>
               </article>
             </div>
