@@ -671,6 +671,10 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     .about-page-cta {
       display: flex;
       flex-flow: column wrap;
+      a:link,
+      a:visited {
+        border-bottom: none !important;
+      }
       article {
         background: $light-blue;
         height: 275px;
@@ -2796,6 +2800,27 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   .hide-popover {
     display: none !important;
     visibility: hidden !important;
+  }
+  #covid-response-page {
+    @include page-header;
+    @include volunteer-opportunities;
+    background: #fff;
+    color: $dark-blue;
+    .button-container {
+      @include button-container;
+      margin: 0 auto;
+      width: 50%;
+      .rounded-green-button {
+        @include body-green-button;
+      }
+      .rounded-blue-button {
+        @include body-blue-button;
+        margin-bottom: 20px;
+      }
+    }
+    .covid-response-map {
+      width: 100%;
+    }
   }
   /*
   * Hide only visually, but have it available for screen readers:

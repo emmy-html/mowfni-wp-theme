@@ -15,10 +15,10 @@
           <p>1(312) 441-0641</p>
         <h6>Find Us Here</h6>
           <p class="social-media">
-            <a href="#" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.facebook.com/mowf/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="https://twitter.com/MealsonWheelsNI" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.instagram.com/mealsonwheels_ni/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/meals-on-wheels-foundation-of-northern-illinois" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
           </p>
         </article>
         <article class="navigation">

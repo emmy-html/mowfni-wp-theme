@@ -15,19 +15,7 @@ MOWFNI Parent WordPress Theme © 2020 emmy-html
 MOWFNI Parent is distributed under the terms of the GNU GPL
 */
 /* imports */
-@font-face {
-  font-family: Lato;
-  src: url(/fonts/Lato-Regular.ttf); }
-@font-face {
-  font-family: Poppins;
-  src: url(/fonts/Poppins-Regular.ttf); }
 /* Transitions */
-@font-face {
-  font-family: Lato;
-  src: url(/fonts/Lato-Regular.ttf); }
-@font-face {
-  font-family: Poppins;
-  src: url(/fonts/Poppins-Regular.ttf); }
 /* Transitions */
 header {
   display: flex;
@@ -966,12 +954,6 @@ textarea {
 
 /* Author's Styles */
 /* Fonts & Colors */
-@font-face {
-  font-family: Lato;
-  src: url(/fonts/Lato-Regular.ttf); }
-@font-face {
-  font-family: Poppins;
-  src: url(/fonts/Poppins-Regular.ttf); }
 /* Transitions */
 /* Universal Styles */
 .topbar {
@@ -1528,6 +1510,9 @@ footer {
 #about-page-our-history .about-page-cta {
   display: flex;
   flex-flow: column wrap; }
+  #about-page-our-history .about-page-cta a:link,
+  #about-page-our-history .about-page-cta a:visited {
+    border-bottom: none !important; }
   #about-page-our-history .about-page-cta article {
     background: #00b5c2;
     height: 275px; }
@@ -2953,8 +2938,6 @@ footer {
   @media screen and (min-width: 992px) {
     #about-mow-page-locations .about-mow-page-programs-application h2 span {
       display: inline-block; } }
-  #about-mow-page-locations .about-mow-page-programs-application:nth-of-type(even) {
-    background: #00b5c2; }
   #about-mow-page-locations .about-mow-page-programs-application p {
     margin: 0;
     padding: 0px 20px;
@@ -2964,7 +2947,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px 0px; }
     #about-mow-page-locations .about-mow-page-programs-application .ccu-info img {
       width: 100%;
@@ -3036,7 +3019,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         padding: 10px 0px; }
         #about-mow-page-locations .about-mow-page-locations-content .about-mow-page-programs .about-mow-page-programs-span .ccu-info img {
           width: 100%;
@@ -3259,9 +3242,10 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start; }
+      align-items: center; }
       #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .ccu-info img {
-        width: 100%; }
+        width: 100%;
+        padding: 10px 0px; }
       #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .ccu-info p {
         padding: 0px; }
     #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article h2 {
@@ -3276,28 +3260,18 @@ footer {
     #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article h3 {
       text-align: left; }
     #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container {
-      margin-top: 10px; }
+      margin-top: 10px;
+      padding: 20px; }
       #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-green-button {
         background: #a9cf38;
         border-radius: 5px;
         border-bottom: none;
-        padding: 5px 15px;
-        border: 2px solid #a9cf38; }
+        padding: 5px 15px; }
         #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-green-button:hover {
           background: #00b5c2;
           transition: 1s background; }
         #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-green-button:hover {
-          border: 2px solid #003952; }
-      #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-blue-button {
-        background: #00b5c2;
-        border-radius: 5px;
-        padding: 5px 15px;
-        border: 2px solid #00b5c2; }
-        #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-blue-button:hover {
-          background: #a9cf38;
-          transition: 1s background; }
-        #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-blue-button:hover {
-          border: 2px solid #003952; }
+          border: none !important; }
 
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
@@ -3787,7 +3761,7 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 45%; }
+      width: 50%; }
       #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .ccu-info {
         display: flex;
         flex-direction: row; }
@@ -4058,6 +4032,108 @@ div#n2-ss-3 .n2-ss-button-container:hover, div#n2-ss-3 .n2-ss-button-container a
 .hide-popover {
   display: none !important;
   visibility: hidden !important; }
+
+#covid-response-page {
+  background: #fff;
+  color: #003952; }
+  #covid-response-page h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #covid-response-page h1 span {
+      color: #003952; }
+  #covid-response-page .volunteer-page-opportunities-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #covid-response-page .volunteer-page-opportunities-container i {
+      background: #003952;
+      color: #a9cf38;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      border-radius: 200px;
+      margin: 0 auto; }
+    #covid-response-page .volunteer-page-opportunities-container article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 350px; }
+      #covid-response-page .volunteer-page-opportunities-container article h2 {
+        font-size: 2rem;
+        line-height: 2rem; }
+      #covid-response-page .volunteer-page-opportunities-container article h3 {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 0px; }
+      #covid-response-page .volunteer-page-opportunities-container article a:link,
+      #covid-response-page .volunteer-page-opportunities-container article a:visited {
+        text-decoration: none; }
+        #covid-response-page .volunteer-page-opportunities-container article a:link:hover,
+        #covid-response-page .volunteer-page-opportunities-container article a:visited:hover {
+          border-bottom: none; }
+    #covid-response-page .volunteer-page-opportunities-container h3 {
+      margin-top: 15px; }
+    #covid-response-page .volunteer-page-opportunities-container aside {
+      padding: 10px 0px;
+      width: 100%; }
+  @media screen and (min-width: 992px) {
+    #covid-response-page .volunteer-page-opportunities-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0px; }
+      #covid-response-page .volunteer-page-opportunities-container aside {
+        width: 25%;
+        height: 500px; }
+        #covid-response-page .volunteer-page-opportunities-container aside i {
+          margin-top: 40px; } }
+  #covid-response-page .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%; }
+    #covid-response-page .button-container a:link,
+    #covid-response-page .button-container a:visited {
+      border-bottom: none;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #covid-response-page .button-container a:link:hover,
+      #covid-response-page .button-container a:visited:hover {
+        border-bottom: none; }
+    #covid-response-page .button-container .rounded-green-button {
+      background: #a9cf38;
+      border-radius: 5px;
+      border-bottom: none;
+      padding: 5px 15px; }
+      #covid-response-page .button-container .rounded-green-button:hover {
+        background: #00b5c2;
+        transition: 1s background; }
+    #covid-response-page .button-container .rounded-blue-button {
+      background: #00b5c2;
+      border-radius: 5px;
+      padding: 5px 15px;
+      margin-bottom: 20px; }
+      #covid-response-page .button-container .rounded-blue-button:hover {
+        background: #a9cf38;
+        transition: 1s background; }
+  #covid-response-page .covid-response-map {
+    width: 100%; }
 
 /*
 * Hide only visually, but have it available for screen readers:

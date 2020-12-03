@@ -95,7 +95,7 @@
                       <p>There is no cost to participants. We do ask that all participants for a voluntary contribution. No one is ever denied service if they are unable or unwilling to contribute.</p>              
                     </div>
                     <div class="about-mow-page-programs-span application-section">
-                    <h2>How to get Meals <span>in Cook County</span></h2>
+                    <h2>How to get Meals <span>in Will County</span></h2>
                       <div class="content-wrapper">
                         <i class="fas fa-copy fa-3x"></i>
                           <p style="padding: 20px; text-align: center;">To receive meals at our cafés, you must register first.</p>
