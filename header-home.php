@@ -18,7 +18,7 @@
       </div>
 </section>
 <section id="popover">
-      <div class="popover-content fade-in sticky">
+      <div class="popover-content fade-in sticky donation-popover">
         <div class="content-wrapper">
             <button onclick="closePopover()">X</button>
         <h1>Help Homebound Seniors</h1>

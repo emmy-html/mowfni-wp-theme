@@ -3917,6 +3917,10 @@ footer {
 
   .adjust-height {
     margin-top: 0px; } }
+/* Very Large Desktop Screens */
+@media screen and (min-width: 1500px) {
+  #popover .sticky.donation-popover {
+    top: 400px; } }
 /* wordpress specific styles */
 .wp-block-video {
   width: 40% !important;
