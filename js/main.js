@@ -47,4 +47,3 @@ function closeTopbar() {
     var popover = document.getElementById("popover");
     popover.classList.add("hide-topbar");
   }
-  document.getElementById("defaultTab").click();

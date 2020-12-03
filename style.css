@@ -1227,20 +1227,28 @@ main a:visited {
     background: #00b5c2;
     border-radius: 5px;
     padding: 5px 15px;
+    border: 3px solid #00b5c2;
     padding: 10px 0px; }
     #cta .rounded-blue-button:hover {
       background: #a9cf38;
       transition: 1s background; }
+    #cta .rounded-blue-button:hover {
+      background: none;
+      border: 3px solid #003952; }
   #cta .rounded-green-button {
     background: #a9cf38;
     border-radius: 5px;
     border-bottom: none;
     padding: 5px 15px;
+    border: 3px solid #a9cf38;
     margin-top: 10px;
     padding: 10px 0px; }
     #cta .rounded-green-button:hover {
       background: #00b5c2;
       transition: 1s background; }
+    #cta .rounded-green-button:hover {
+      background: none;
+      border: 3px solid #003952; }
 
 /* Our Impact */
 #our-impact {
@@ -3388,8 +3396,8 @@ footer {
     flex-flow: row wrap; }
     #meals .meals-content-container article {
       background: #fff;
-      width: 33.3%;
-      height: 400px; }
+      width: 50%;
+      height: 300px; }
       #meals .meals-content-container article i {
         background: #003952;
         color: #a9cf38;

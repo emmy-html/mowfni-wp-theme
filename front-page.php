@@ -38,10 +38,10 @@ echo do_shortcode('[smartslider3 slider="3"]');
         <p>During this national emergency, we are delivering additional meals to our most vulnerable communities, and we need your help!</p>
         <div class="options-container">
           <div class="button-container">
-            <a href="#" target="_blank" class="rounded-blue-button">Volunteer</a>
+            <a href="/volunteer" class="rounded-blue-button">Volunteer</a>
           </div>
           <div class="button-container">
-            <a href="#" target="_blank" class="rounded-green-button">Donate</a>
+            <a href="/donate" class="rounded-green-button">Donate</a>
           </div>
         </div>
       </div>
@@ -54,33 +54,23 @@ echo do_shortcode('[smartslider3 slider="3"]');
       </div>
         <div class="meals-content-container">
           <article>
-            <i class="fas fa-car fa-3x"></i>
+          <i class="fas fa-utensils fa-3x"></i>
             <h4>
               Meal Pick Up
             </h4>
             <p>Due to the COVID-19 pandemic, we are now offering meal pick up instead of in-person dining. Pick up times vary by location.</p>
             <div class="button-container">
-              <a href="mow/about_meals_on_wheels.html" class="rounded-blue-button">Find A Location Near You &#8250;</a>
+              <a href="cafes/find-a-cafe/" class="rounded-blue-button">Find A Pick-Up Location &#8250;</a>
             </div>
           </article>
           <article>
-            <i class="fas fa-utensils fa-3x"></i>
+          <i class="fas fa-car fa-3x"></i>
             <h4>
-              Our Menus
+            Meal Delivery
             </h4>
             <p>Each meal comes with protein, vegetables, fruit, grain, and milk. The menus have been approved by a Registered Dietitian to meet 1/3 of your daily recommended intake of nutrients.</p>
             <div class="button-container">
-              <a href="mow/about_meals_on_wheels.html#menu" class="rounded-green-button">View Our Menus &#8250;</a>
-            </div>
-          </article>
-          <article>
-            <i class="fas fa-check-circle fa-3x"></i>
-            <h4>
-              Easy Apply
-            </h4>
-            <p>Getting qualified can be as easy as 1, 2, 3. Find out more about the application process today!</p>
-            <div class="button-container">
-              <a href="mow/about_meals_on_wheels.html" class="rounded-blue-button">Apply Now &#8250;</a>
+              <a href="/meals-on-wheels/" class="rounded-green-button">Find A Delivery Location &#8250;</a>
             </div>
           </article>
           </div>

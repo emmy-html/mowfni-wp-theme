@@ -1,4 +1,4 @@
-<?php /* Template Name: About Meals On Wheels Page */ ?>
+<?php /* Template Name: C2 Cook County Page */ ?>
 
 <?php get_header(); ?>
 
@@ -8,7 +8,9 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <h1><?php the_title(); ?></h1>
 <section id="about-mow-page-locations">
+
             <div class="about-mow-page-locations-content">
+                
                 <article class="map">
                 <?php if( get_field('multi_map_1') ): ?>
                     <?php the_field('multi_map_1'); ?>
@@ -24,7 +26,7 @@
                     <div class="map-locations-container">
 
                     <?php 
-                    $args = array( 'post_type' => 'c2-locations', 'posts_per_page' => 100, 'orderby' => 'title',
+                    $args = array( 'post_type' => 'c2-locations', 'tag' => 'c2-cook-county', 'posts_per_page' => 100, 'orderby' => 'title',
                     'order'   => 'ASC' );
                     $the_query = new WP_Query( $args ); 
                     ?>
@@ -62,10 +64,7 @@
                     </h3>
                     </div>
                     <div>
-                        <?php if( get_field('manager_select') ): ?>
-                        <h3>
-                          <?php the_field('manager_select'); ?>
-                        <?php endif; ?> 
+                        <h3>Manager:
                         <?php if( get_field('location_manager') ): ?>
                         <span><?php the_field('location_manager'); ?></span>
                         <?php endif; ?> 
@@ -93,12 +92,6 @@
                       <h2>How much do 
                         <span>the meals cost?</span></h2>
                       <p>There is no cost to participants. We do ask that all participants for a voluntary contribution. No one is ever denied service if they are unable or unwilling to contribute.</p>              
-                    </div>
-                    <div class="about-mow-page-programs-span">
-                      <i class="fas fa-car fa-3x"></i>
-                      <h2>How to get 
-                        <span>Meals on Wheels</span></h2>
-                      <p>If you or a loved one is in need of Meals on Wheels, you will need to first contact a case coordinator. Using the locator on this page, enter your zip code to find the nearest Meals on Wheels distribution location. Once you find a location click on its name to be taken to that locations home page. Here you will find contact information the case coordinator for that area as well as the manager of that location. If you have any questions about the proces for getting meals on wheels, our staff will be there to assist you. If you have any other questions, please feel free to contact our main office at (312) 207-5290.</p>
                     </div>
               </article>
             </div>

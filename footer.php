@@ -41,7 +41,5 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
-    <script src="/mowfni/wp-content/themes/mowfni-theme/js/main.js"></script>
-    <script src="/js/plugins.js"></script>
 </body>
 </html>

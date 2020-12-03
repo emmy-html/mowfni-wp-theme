@@ -399,12 +399,22 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     }
     .rounded-blue-button {
       @include body-blue-button;
+      border: 3px solid $light-blue;
       padding: 10px 0px;
+      &:hover {
+        background: none;
+        border: 3px solid $dark-blue;
+      }
     }
     .rounded-green-button {
       @include body-green-button;
+      border: 3px solid $lime-green;
       margin-top: 10px;
       padding: 10px 0px;
+      &:hover {
+        background: none;
+        border: 3px solid $dark-blue;
+      }
     }
   }
   /* Our Impact */ 
@@ -1594,9 +1604,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       align-items: center;
       width: 100%;
       padding-bottom: 20px;
-      &:nth-of-type(even) {
-        background: $light-blue;
-      }
       p {
         margin: 0;
         padding: 0px 20px;
@@ -1607,7 +1614,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         padding: 10px 0px;
         img {
           width: 100%;
@@ -1665,7 +1672,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
               display: flex;
               flex-direction: column;
               justify-content: center;
-              align-items: flex-start;
+              align-items: center;
               padding: 10px 0px;
               img {
                 width: 100%;
@@ -1851,13 +1858,13 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         img {
           width: 100%;
+          padding: 10px 0px;
         }
         p {
           padding: 0px;
-
         }
       }
       h2 {
@@ -1877,18 +1884,11 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       }
       .button-container {
         margin-top: 10px;
+        padding: 20px;
         .rounded-green-button {
           @include body-green-button;
-          border: 2px solid $lime-green;
           &:hover {
-            border: 2px solid $dark-blue;
-          }
-        }
-        .rounded-blue-button {
-          @include body-blue-button;
-          border: 2px solid $light-blue;
-          &:hover {
-            border: 2px solid $dark-blue;
+            border: none !important;
           }
         }
       }
@@ -2026,8 +2026,8 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         article {
           @include fontawesome-icon;
           background: #fff;
-          width: 33.3%;
-          height: 400px;
+          width: 50%;
+          height: 300px;
           p {
             width: 80%;
           }
@@ -2525,7 +2525,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 45%;
+          width: 50%;
           .ccu-info {
             img {
               width: 90%;

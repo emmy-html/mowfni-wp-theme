@@ -30,7 +30,11 @@
             <?php if( get_field('service_days') ): ?>
                 <p><?php the_field('service_days'); ?></p>
             <?php endif; ?> 
-            <h3>Manager:</h3>
+            <?php if( get_field('manager_select') ): ?>
+                <h3>
+                    <?php the_field('manager_select'); ?>
+                </h3>
+            <?php endif; ?>
             <?php if( get_field('manager_name') ): ?>
                 <p><?php the_field('manager_name'); ?></p>
             <?php endif; ?> 

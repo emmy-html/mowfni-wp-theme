@@ -1,4 +1,4 @@
-<?php /* Template Name: C2 (Meal Delivery) Location Template */ ?>
+<?php /* Template Name: C2 Individual Location Template */ ?>
 <?php get_header(); ?>
 
 <main id="content">
@@ -63,29 +63,15 @@
             <?php if( get_field('ccu_number') ): ?>
                 <p><?php the_field('ccu_number'); ?></p>
             <?php endif; ?>
-            <p>Website:
-            <?php if( get_field('ccu_website') ): ?>
-                <a href="<?php the_field('ccu_website'); ?>" target="_blank"><?php the_field('ccu_name'); ?></a>
-            <?php endif; ?>
             </aside>
-            </p>
             </div>
             <div class="button-container">
-            <?php if( get_field('ccu_application') ): ?>
-                <a href="<?php the_field('ccu_application'); ?>" target="_blank" class="rounded-green-button">Download Application</a>
+            <?php if( get_field('ccu_website') ): ?>
+                <a href="<?php the_field('ccu_website'); ?>" target="_blank" class="rounded-green-button">Visit Their Website &#8250;</a>
             <?php endif; ?>
             </div>
           </div>
-        </article>
-        <article>
-          <h2>Menu</h2>
-          <div class="content-wrapper">
-              <i class="fas fa-utensils fa-3x"></i>
-              <p>Each meal comes with protein, vegetables, fruit, grain, and milk. The menus have been approved by a Registered Dietitian to meet 1/3 of your daily recommended intake of nutrients.</p>
-            <div class="button-container">
-              <a href="<?php the_field('menu'); ?>" target="_blank" class="rounded-blue-button">View Our Menu</a>
-            </div>
-          </div>
+
         </article>
       </div>
     </section>

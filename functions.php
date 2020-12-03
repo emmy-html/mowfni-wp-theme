@@ -238,3 +238,14 @@ function custom_post_type() {
   */
    
     add_action( 'init', 'custom_post_type', 0 );
+
+    /* enqueue custom scripts & fonts */
+
+    function mowfni_files() { 
+        wp_enqueue_style('mowfni_fonts', '//fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:ital,wght@0,300;0,700;1,400&display=swap'); 
+        wp_enqueue_script('mowfni_fontawesome', '//kit.fontawesome.com/33391c5587.js'); 
+        wp_enqueue_script('mowfni_js', get_theme_file_uri('/js/main.js'));
+        wp_enqueue_script('mowfni_js_plugins', get_theme_file_uri('/js/plugins.js'));
+    } 
+    
+    add_action('wp_enqueue_scripts', 'mowfni_files');
