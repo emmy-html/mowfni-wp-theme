@@ -11,6 +11,12 @@
   During this national emergency, we need your help the most. Learn how you can <a href="/get-involved">get involved</a> today!
   <button onclick="closeTopbar()">X</button>
 </div>
+<section id="suggestion-box-popover">
+      <div class="suggestion-box-popover-content fade-in-up sticky">
+          <a href="/suggestion-box">Suggestion Box</a>
+          <button onclick="closeSuggestionPopover()">X</button>
+      </div>
+</section>
 <section id="popover">
       <div class="popover-content fade-in sticky">
         <div class="content-wrapper">
@@ -18,15 +24,12 @@
         <h1>Help Homebound Seniors</h1>
         <h2>During COVID-19.</h2>
         <div class="donation-form-container">
-          
-          <p>$</p> <input class="donation-form-filler">
-          </input> <p>USD/MO</p>
-          <a href="https://donorbox.org/make-sure-no-older-adult-goes-hungry?default_interval=o&amount=30" class="donate-button" target="_blank">Donate</a>
+          <a href="/donate" class="donate-button" target="_blank">Donate</a>
         </div>
       </div>
       </div>  
     </section>
-<header id="header-nav" style="margin-top: 25px;">
+<header id="header-nav" class="header-desktop-adjust">
   <img src="https://i.imgur.com/Kio5ah0.png" width="50" height="50">
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 </header>

@@ -964,6 +964,13 @@ textarea {
   position: fixed;
   top: 600px; }
 
+.header-nav {
+  margin-top: 0px; }
+
+#suggestion-box-popover {
+  background: #fff;
+  visibility: hidden; }
+
 #popover {
   background: #fff;
   visibility: hidden; }
@@ -991,7 +998,6 @@ textarea {
       padding-top: 5px;
       padding-bottom: 10px; }
     #popover .popover-content .donation-form-container {
-      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1001,10 +1007,6 @@ textarea {
       #popover .popover-content .donation-form-container p {
         margin: 0px;
         padding: 0px 5px; }
-      #popover .popover-content .donation-form-container .donation-form-filler {
-        border: none;
-        padding: 10px;
-        max-width: 100px; }
       #popover .popover-content .donation-form-container .donate-button {
         background: #003952;
         border-bottom: none;
@@ -3238,6 +3240,15 @@ footer {
       text-align: center;
       border-radius: 200px;
       margin: 0 auto; }
+    #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .content-wrapper .rounded-blue-button {
+      background: #00b5c2;
+      border-radius: 5px;
+      padding: 5px 15px; }
+      #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .content-wrapper .rounded-blue-button:hover {
+        background: #a9cf38;
+        transition: 1s background; }
+      #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .content-wrapper .rounded-blue-button:hover {
+        border: none !important; }
     #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .ccu-info {
       display: flex;
       flex-direction: column;
@@ -3272,6 +3283,15 @@ footer {
           transition: 1s background; }
         #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-green-button:hover {
           border: none !important; }
+      #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-blue-button {
+        background: #00b5c2;
+        border-radius: 5px;
+        padding: 5px 15px; }
+        #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-blue-button:hover {
+          background: #a9cf38;
+          transition: 1s background; }
+        #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-blue-button:hover {
+          border: none !important; }
 
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
@@ -3279,6 +3299,9 @@ footer {
   body {
     font-size: 18px;
     line-height: 1.5rem; }
+
+  .header-desktop-adjust {
+    margin-top: 25px; }
 
   /* Hero Section */
   #hero {
@@ -3774,6 +3797,45 @@ footer {
     justify-content: center; }
     #annual-report-page-template .annual-report-page-container aside {
       margin: 160px 0px 0px 30px; }
+
+  #suggestion-box-popover {
+    padding: 0px !important;
+    visibility: visible; }
+    #suggestion-box-popover .suggestion-box-popover-content {
+      background: #00b5c2;
+      width: 25px;
+      top: 200px;
+      left: 0px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed; }
+      #suggestion-box-popover .suggestion-box-popover-content a:link,
+      #suggestion-box-popover .suggestion-box-popover-content a:visited {
+        background: #00b5c2;
+        color: #003952;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 5px !important;
+        text-decoration: none;
+        text-transform: uppercase; }
+        #suggestion-box-popover .suggestion-box-popover-content a:link:hover,
+        #suggestion-box-popover .suggestion-box-popover-content a:visited:hover {
+          background: #a9cf38;
+          border-bottom: none !important;
+          transition: .3s background-color; }
+      #suggestion-box-popover .suggestion-box-popover-content button {
+        background: #00b5c2;
+        border: none;
+        color: #003952;
+        font-family: "Poppins", sans-serif;
+        font-size: .75rem;
+        font-weight: 900;
+        padding: 5px;
+        width: 35px; }
+        #suggestion-box-popover .suggestion-box-popover-content button:hover {
+          background: #a9cf38;
+          cursor: pointer;
+          transition: .3s background-color; }
 
   #popover {
     padding: 0px !important;

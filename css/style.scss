@@ -142,6 +142,13 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   position: fixed;
   top: 600px;
 }
+.header-nav {
+  margin-top: 0px;
+}
+#suggestion-box-popover {
+  background: #fff;
+  visibility: hidden;
+}
 #popover {
   background: #fff;
   visibility: hidden;
@@ -172,7 +179,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       padding-bottom: 10px;
     }
     .donation-form-container {
-      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -182,11 +188,6 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       p {
         margin: 0px;
         padding: 0px 5px;
-      }
-      .donation-form-filler {
-        border: none;
-        padding: 10px;
-        max-width: 100px;
       }
       .donate-button {
         background: $dark-blue;
@@ -1858,6 +1859,14 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       background: #fff;
       color: $dark-blue;
       padding: 30px 0px;
+      .content-wrapper {
+        .rounded-blue-button {
+          @include body-blue-button;
+          &:hover {
+            border: none !important;
+          }
+        }
+      }
       .ccu-info {
         display: flex;
         flex-direction: column;
@@ -1895,6 +1904,12 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
             border: none !important;
           }
         }
+        .rounded-blue-button {
+          @include body-blue-button;
+          &:hover {
+            border: none !important;
+          }
+        }
       }
     }
   }
@@ -1905,6 +1920,9 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     body {
       font-size: 18px;
       line-height: 1.5rem;
+    }
+    .header-desktop-adjust {
+      margin-top: 25px;
     }
     /* Hero Section */ 
     #hero {
@@ -2548,6 +2566,49 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         aside {
           margin: 160px 0px 0px 30px;
         }
+      }
+    }
+    #suggestion-box-popover {
+      padding: 0px !important;
+      visibility: visible;
+      .suggestion-box-popover-content {
+        background: $light-blue;
+        width: 25px;
+        top: 200px;
+        left: 0px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+          a:link,
+          a:visited {
+            background: $light-blue;
+            color: $dark-blue;
+            font-family: $heading-font;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 5px !important;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+              background: $lime-green;
+              border-bottom: none !important;
+              transition: .3s background-color;
+            }
+          }
+          button {
+            background: $light-blue;
+            border: none;
+            color: $dark-blue;
+            font-family: $heading-font;
+            font-size: .75rem;
+            font-weight: 900;
+            padding: 5px;
+            width: 35px;
+            &:hover {
+              background: $lime-green;
+              cursor: pointer;
+              transition: .3s background-color;
+            }
+          }
       }
     }
     #popover {
