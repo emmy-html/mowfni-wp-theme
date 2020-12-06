@@ -212,7 +212,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   body {
     background: $dark-blue;
     color: #fff;
-    font-family: $body-font;
+    font-family: $body-font !important;
     font-size: 16px;
     line-height: 1.35rem;
   }
@@ -560,6 +560,15 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   footer {
     background: $dark-blue;
     color: #fff;
+    a:link,
+    a:visited {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: $lime-green;
+        transition: .3s color;
+      }
+    }
     .content-wrapper {
       padding: 25px 0px;
     }
@@ -1492,6 +1501,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   .button-container {
     @include button-container;
     padding: 20px;
+    margin: 0 auto;
     .rounded-blue-button {
       @include body-blue-button;
     }
@@ -1914,6 +1924,57 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     }
   }
 }
+  /* subaru share the love page */ 
+  #subaru-event-page {
+    @include page-header;
+    background: #fff;
+    color: $dark-blue;
+    .subaru-event-page-hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    .subaru-event-page-stats {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a:link,
+      a:visited {
+        border-bottom: none;
+      }
+      img.subaru-event-stat-photo-one {
+        width: 100%;
+      }
+      img.subaru-event-stat-photo-two {
+        width: 100%;
+      }
+    }
+    .subaru-event-page-desc {
+      display: flex;
+      flex-direction: column;
+      .content-wrapper {
+        padding: 10px 0px;
+        span {
+          color: $light-blue;
+          font-weight: bold;
+        }
+      }
+      img {
+        width: 280px;
+        margin: 0 auto;
+      }
+    }
+    .button-container {
+      @include button-container;
+      @include body-blue-button;
+      margin: 10px;
+    }
+  }
   /* Large Tablets & Desktop Styles */ 
   @media screen and (min-width: 992px) {
     /* Universal Styles */ 
@@ -2370,7 +2431,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       flex-direction: row;
       align-items: flex-end;
       .volunteer-page-locations-container {
-        width: 84.7%;
+        width: 75%;
       }
     }
   }
@@ -2711,6 +2772,35 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
     }
     .adjust-height {
       margin-top: 0px;
+    }
+    #subaru-event-page {
+      .subaru-event-page-stats {
+        display: flex;
+        flex-direction: row !important;
+        .subaru-event-stat-photo-one {
+          width: 50% !important;
+        }
+        .subaru-event-stat-photo-two {
+          width: 100% !important;
+          opacity: 1;
+          &:hover {
+            cursor: pointer;
+            opacity: .5;
+            transition: .3s opacity;
+          }
+        }
+      }
+      .subaru-event-page-desc {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 20px 0px;
+      }
+      .button-container {
+        width: 25%;
+        margin: 0 auto;
+      }
     }
   }
   /* Very Large Desktop Screens */ 

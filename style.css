@@ -15,7 +15,23 @@ MOWFNI Parent WordPress Theme © 2020 emmy-html
 MOWFNI Parent is distributed under the terms of the GNU GPL
 */
 /* imports */
+@font-face {
+  font-family: Lato;
+  src: url("/wp-content/themes/mowfni-parent-theme/fonts/Lato-Regular.ttf");
+  font-weight: regular; }
+@font-face {
+  font-family: Lato;
+  src: url("/wp-content/themes/mowfni-parent-theme/fonts/Lato-Bold.ttf");
+  font-weight: bold; }
 /* Transitions */
+@font-face {
+  font-family: Lato;
+  src: url("/wp-content/themes/mowfni-parent-theme/fonts/Lato-Regular.ttf");
+  font-weight: regular; }
+@font-face {
+  font-family: Lato;
+  src: url("/wp-content/themes/mowfni-parent-theme/fonts/Lato-Bold.ttf");
+  font-weight: bold; }
 /* Transitions */
 header {
   display: flex;
@@ -954,6 +970,14 @@ textarea {
 
 /* Author's Styles */
 /* Fonts & Colors */
+@font-face {
+  font-family: Lato;
+  src: url("/wp-content/themes/mowfni-parent-theme/fonts/Lato-Regular.ttf");
+  font-weight: regular; }
+@font-face {
+  font-family: Lato;
+  src: url("/wp-content/themes/mowfni-parent-theme/fonts/Lato-Bold.ttf");
+  font-weight: bold; }
 /* Transitions */
 /* Universal Styles */
 .topbar {
@@ -1026,7 +1050,7 @@ textarea {
 body {
   background: #003952;
   color: #fff;
-  font-family: "Lato", sans-serif;
+  font-family: Lato !important;
   font-size: 16px;
   line-height: 1.35rem; }
 
@@ -1135,7 +1159,7 @@ main a:visited {
     text-transform: uppercase; }
   #newsletter .newsletter-container .ctct-gdpr-text {
     color: #fff;
-    font-family: "Lato", sans-serif; }
+    font-family: Lato; }
     #newsletter .newsletter-container .ctct-gdpr-text a:link,
     #newsletter .newsletter-container .ctct-gdpr-text a:visited {
       color: #a9cf38;
@@ -1397,6 +1421,14 @@ main a:visited {
 footer {
   background: #003952;
   color: #fff; }
+  footer a:link,
+  footer a:visited {
+    color: #fff;
+    text-decoration: none; }
+    footer a:link:hover,
+    footer a:visited:hover {
+      color: #a9cf38;
+      transition: .3s color; }
   footer .content-wrapper {
     padding: 25px 0px; }
   footer .text-logo {
@@ -2673,7 +2705,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 20px; }
+    padding: 20px;
+    margin: 0 auto; }
     #volunteer-page-locations .button-container a:link,
     #volunteer-page-locations .button-container a:visited {
       border-bottom: none;
@@ -3293,6 +3326,74 @@ footer {
         #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .button-container .rounded-blue-button:hover {
           border: none !important; }
 
+/* subaru share the love page */
+#subaru-event-page {
+  background: #fff;
+  color: #003952; }
+  #subaru-event-page h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #subaru-event-page h1 span {
+      color: #003952; }
+  #subaru-event-page .subaru-event-page-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #subaru-event-page .subaru-event-page-hero img {
+      width: 100%; }
+  #subaru-event-page .subaru-event-page-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #subaru-event-page .subaru-event-page-stats a:link,
+    #subaru-event-page .subaru-event-page-stats a:visited {
+      border-bottom: none; }
+    #subaru-event-page .subaru-event-page-stats img.subaru-event-stat-photo-one {
+      width: 100%; }
+    #subaru-event-page .subaru-event-page-stats img.subaru-event-stat-photo-two {
+      width: 100%; }
+  #subaru-event-page .subaru-event-page-desc {
+    display: flex;
+    flex-direction: column; }
+    #subaru-event-page .subaru-event-page-desc .content-wrapper {
+      padding: 10px 0px; }
+      #subaru-event-page .subaru-event-page-desc .content-wrapper span {
+        color: #00b5c2;
+        font-weight: bold; }
+    #subaru-event-page .subaru-event-page-desc img {
+      width: 280px;
+      margin: 0 auto; }
+  #subaru-event-page .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #00b5c2;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 10px; }
+    #subaru-event-page .button-container a:link,
+    #subaru-event-page .button-container a:visited {
+      border-bottom: none;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #subaru-event-page .button-container a:link:hover,
+      #subaru-event-page .button-container a:visited:hover {
+        border-bottom: none; }
+    #subaru-event-page .button-container:hover {
+      background: #a9cf38;
+      transition: 1s background; }
+
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
   /* Universal Styles */
@@ -3653,7 +3754,7 @@ footer {
     flex-direction: row;
     align-items: flex-end; }
     #volunteer-page-locations .volunteer-page-service-area .volunteer-page-locations-container {
-      width: 84.7%; }
+      width: 75%; }
 
   /* Get Involved Page */
   #get-involved-page-cta .get-involved-cta-container {
@@ -3916,7 +4017,29 @@ footer {
     display: none; }
 
   .adjust-height {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+
+  #subaru-event-page .subaru-event-page-stats {
+    display: flex;
+    flex-direction: row !important; }
+    #subaru-event-page .subaru-event-page-stats .subaru-event-stat-photo-one {
+      width: 50% !important; }
+    #subaru-event-page .subaru-event-page-stats .subaru-event-stat-photo-two {
+      width: 100% !important;
+      opacity: 1; }
+      #subaru-event-page .subaru-event-page-stats .subaru-event-stat-photo-two:hover {
+        cursor: pointer;
+        opacity: .5;
+        transition: .3s opacity; }
+  #subaru-event-page .subaru-event-page-desc {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 20px 0px; }
+  #subaru-event-page .button-container {
+    width: 25%;
+    margin: 0 auto; } }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {
   #popover .sticky.donation-popover {
