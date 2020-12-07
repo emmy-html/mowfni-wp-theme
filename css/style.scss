@@ -1537,66 +1537,89 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
   color: $dark-blue;
   padding-bottom: 20px;
 }
-  /* Get Involved Page */ 
-  #get-involved-page-hero {
-    @include page-header;
-    padding-top: 75px;
-    .volunteer-page-span {
-      @include page-hero;
-      background: top no-repeat url('img/volunteer-hero.png');
-      background-size: 100%;
-    }
+/* Get Involved Page */ 
+#get-involved-page-hero {
+  @include page-header;
+  padding-top: 75px;
+  .volunteer-page-span {
+    @include page-hero;
+    background: top no-repeat url('../img/volunteer-hero.png');
+    background-size: 100%;
   }
-  #get-involved-page-cta {
-    @include page-header;
-    background: #fff;
-    color: $dark-blue;
-    p {
-      margin: 0;
-      padding: 5px 0px;
-      text-align: justify;
-    }
-    .get-involved-cta-container {
+}
+#get-involved-page-other-ways {
+  @include page-header;
+  @include other-ways-tabs;
+  @include fontawesome-icon;
+  h2 {
+    padding: 20px;
+    font-weight: 700;
+  }
+  h3 {
+    padding-top: 20px;
+  }
+  .button-container {
+    @include button-container;
+    margin: 20px;
+  }
+  .rounded-blue-button {
+    @include body-blue-button;
+  }
+}
+#get-involved-page-cta {
+  @include page-header;
+  background: #fff;
+  color: $dark-blue;
+  p {
+    margin: 0;
+    padding: 5px 0px;
+    text-align: justify;
+  }
+  .get-involved-cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    article {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 350px;
-        h2 {
-          font-size: 3rem;
-          line-height: 3rem;
-        }
-        h3 {
-          font-size: 3rem;
-          line-height: 3rem;
-        }
-        &:nth-of-type(1) {
-          background: center no-repeat url('img/filler-square-01.png');
-          background-size: cover;
-        }
-        &:nth-of-type(2) {
-          background: center no-repeat url('img/filler-square-03.png');
-          background-size: cover;
-        }
-        a:link,
-        a:visited {
-          text-decoration: none;
-          &:hover {
-            border-bottom: none;
-          }
-        }
+      width: 100%;
+      height: 350px;
+      a:link,
+      a:visited {
+        border-bottom: none;
+      }
+      h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      h3 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      &:nth-of-type(1) {
+        background: center no-repeat url('img/filler-square-01.png');
+        background-size: cover;
+      }
+      &:nth-of-type(2) {
+        background: center no-repeat url('img/filler-square-03.png');
+        background-size: cover;
+      }
+      a:link,
+      a:visited {
+        text-decoration: none;
         &:hover {
-          opacity: .75;
-          transition: 1s opacity;
+          border-bottom: none;
         }
+      }
+      &:hover {
+        opacity: .75;
+        transition: 1s opacity;
       }
     }
   }
+}
   /* About Meals On Wheels Page */ 
   #about-mow-page-hero {
     @include page-header;
@@ -2446,6 +2469,7 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         }
       }
     }
+    /* Donate Page */
     #donation-page-gift-impact {
       .content-wrapper {
         display: flex;
@@ -2956,10 +2980,12 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       }
     }
   }
+  /* hide popover */ 
   .hide-popover {
     display: none !important;
     visibility: hidden !important;
   }
+  /* response to COVID-19 page */ 
   #covid-response-page {
     @include page-header;
     @include volunteer-opportunities;
@@ -2981,6 +3007,19 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       width: 100%;
     }
   }
+  /* google translate plugin */ 
+  #translate-option {
+    background: $light-blue !important;
+  }
+  .translate-section {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    padding: 3px;
+    border-radius: 0px 5px 0px 0px;
+  }
+  
   /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility

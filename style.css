@@ -2836,7 +2836,7 @@ footer {
     #get-involved-page-hero h1 span {
       color: #003952; }
   #get-involved-page-hero .volunteer-page-span {
-    background: top no-repeat url("img/volunteer-hero.png");
+    background: top no-repeat url("../img/volunteer-hero.png");
     background-size: 100%; }
     #get-involved-page-hero .volunteer-page-span h1 {
       background: none;
@@ -2852,6 +2852,115 @@ footer {
         font-size: 3rem;
         line-height: 3rem;
         padding-top: 200px; } }
+
+#get-involved-page-other-ways h1 {
+  background: #a9cf38;
+  color: #003952;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 10px 0px;
+  margin: 0 auto;
+  width: 100%; }
+  #get-involved-page-other-ways h1 span {
+    color: #003952; }
+#get-involved-page-other-ways .other-ways-tabs {
+  display: flex;
+  flex-direction: column;
+  /* Style the tab */
+  /* Style the buttons that are used to open the tab content */
+  /* Change background color of buttons on hover */
+  /* Create an active/current "tab button" class */
+  /* Style the tab content */ }
+  #get-involved-page-other-ways .other-ways-tabs .tab {
+    background: #00b5c2;
+    width: 100%; }
+  #get-involved-page-other-ways .other-ways-tabs .tab button {
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    background-color: #00b5c2;
+    color: #003952;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 10px 0px; }
+  #get-involved-page-other-ways .other-ways-tabs .tab button:hover {
+    background-color: #003952;
+    color: #fff; }
+  #get-involved-page-other-ways .other-ways-tabs .tab button.active {
+    background-color: #a9cf38; }
+    #get-involved-page-other-ways .other-ways-tabs .tab button.active:hover {
+      background: #003952;
+      transition: .3s background; }
+  #get-involved-page-other-ways .other-ways-tabs .tabcontent {
+    background: #a9cf38;
+    color: #003952;
+    display: none;
+    width: 100%;
+    padding: 20px 0px; }
+    #get-involved-page-other-ways .other-ways-tabs .tabcontent img {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 10px; }
+    #get-involved-page-other-ways .other-ways-tabs .tabcontent h3 {
+      text-transform: none; }
+@media screen and (min-width: 992px) {
+  #get-involved-page-other-ways .other-ways-tabs {
+    display: flex;
+    flex-direction: row; }
+    #get-involved-page-other-ways .other-ways-tabs .tab-button-container {
+      width: 30%;
+      background: #00b5c2; }
+    #get-involved-page-other-ways .other-ways-tabs .tab-content-container {
+      width: 70%; }
+    #get-involved-page-other-ways .other-ways-tabs .tab, #get-involved-page-other-ways .other-ways-tabs .tabcontent {
+      height: 300px; }
+    #get-involved-page-other-ways .other-ways-tabs .tabcontent {
+      padding-top: 30px; } }
+#get-involved-page-other-ways i {
+  background: #003952;
+  color: #a9cf38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 200px;
+  margin: 0 auto; }
+#get-involved-page-other-ways h2 {
+  padding: 20px;
+  font-weight: 700; }
+#get-involved-page-other-ways h3 {
+  padding-top: 20px; }
+#get-involved-page-other-ways .button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px; }
+  #get-involved-page-other-ways .button-container a:link,
+  #get-involved-page-other-ways .button-container a:visited {
+    border-bottom: none;
+    color: #003952;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase; }
+    #get-involved-page-other-ways .button-container a:link:hover,
+    #get-involved-page-other-ways .button-container a:visited:hover {
+      border-bottom: none; }
+#get-involved-page-other-ways .rounded-blue-button {
+  background: #00b5c2;
+  border-radius: 5px;
+  padding: 5px 15px; }
+  #get-involved-page-other-ways .rounded-blue-button:hover {
+    background: #a9cf38;
+    transition: 1s background; }
 
 #get-involved-page-cta {
   background: #fff;
@@ -2881,6 +2990,9 @@ footer {
       justify-content: center;
       width: 100%;
       height: 350px; }
+      #get-involved-page-cta .get-involved-cta-container article a:link,
+      #get-involved-page-cta .get-involved-cta-container article a:visited {
+        border-bottom: none; }
       #get-involved-page-cta .get-involved-cta-container article h2 {
         font-size: 3rem;
         line-height: 3rem; }
@@ -3764,6 +3876,7 @@ footer {
       width: 50%;
       height: 450px; }
 
+  /* Donate Page */
   #donation-page-gift-impact .content-wrapper {
     display: flex;
     justify-content: space-around;
@@ -4218,10 +4331,12 @@ div#n2-ss-3 .n2-ss-button-container:hover, div#n2-ss-3 .n2-ss-button-container a
       border: 3px solid #003952;
       transition: 1s background-color; }
 
+/* hide popover */
 .hide-popover {
   display: none !important;
   visibility: hidden !important; }
 
+/* response to COVID-19 page */
 #covid-response-page {
   background: #fff;
   color: #003952; }
@@ -4323,6 +4438,18 @@ div#n2-ss-3 .n2-ss-button-container:hover, div#n2-ss-3 .n2-ss-button-container a
         transition: 1s background; }
   #covid-response-page .covid-response-map {
     width: 100%; }
+
+/* google translate plugin */
+#translate-option {
+  background: #00b5c2 !important; }
+
+.translate-section {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  padding: 3px;
+  border-radius: 0px 5px 0px 0px; }
 
 /*
 * Hide only visually, but have it available for screen readers:

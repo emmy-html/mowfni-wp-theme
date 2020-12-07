@@ -15,5 +15,8 @@
   <img src="https://i.imgur.com/Kio5ah0.png" width="50" height="50">
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 </header>
+<div id="translate-option" class="translate-section">
+  <?php echo do_shortcode('[prisna-google-website-translator]'); ?>
+</div>
 <body id="body-adjust-main" <?php body_class(); ?>>
 <div id="container">
