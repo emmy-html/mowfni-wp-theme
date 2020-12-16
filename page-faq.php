@@ -1,10 +1,9 @@
-<?php /* Template Name: Donation Page */ ?>
-
+<?php /* Template Name: FAQ Page Template */ ?>
 <?php get_header(); ?>
 
 <main id="content">
-<section id="donation-page">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<section id="faq-page-template">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <h1><?php the_title(); ?></h1>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

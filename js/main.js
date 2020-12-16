@@ -51,4 +51,3 @@ function closeTopbar() {
     var suggestionPopover = document.getElementById("suggestion-box-popover");
     suggestionPopover.classList.add("hide-topbar");
   }
-  document.getElementById("defaultTab").click();

@@ -1998,6 +1998,36 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       margin: 10px;
     }
   }
+  /* faq page */ 
+  #faq-page-template {
+    @include page-header;
+    background: #fff;
+    color: $dark-blue;
+    text-align: center;
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+    h2 {
+      line-height: 1.75rem;
+      text-transform: none;
+      padding: 10px 0px;
+    }
+    script {
+      padding-bottom: 20px !important;
+    }
+    .button-container {
+      @include button-container;
+      .rounded-green-button {
+        @include body-green-button;
+        margin-bottom: 20px;
+      }
+    }
+  }
   /* Large Tablets & Desktop Styles */ 
   @media screen and (min-width: 992px) {
     /* Universal Styles */ 
@@ -2844,6 +2874,11 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
               width: 25%;
             }
         }
+      }
+    }
+    #faq-page-template {
+      article {
+        width: 75%;
       }
     }
   }
