@@ -2826,6 +2826,26 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         margin: 0 auto;
       }
     }
+    /* press release donation page */ 
+    #press-release-donation-page-template {
+      img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+      }
+      .press-release-donation-page-content-container {
+        article {
+            display: flex;
+            align-items: flex-end;
+            .content-wrapper:nth-of-type(1) {
+              width: 75%;
+            }
+            .content-wrapper:nth-of-type(2) {
+              width: 25%;
+            }
+        }
+      }
+    }
   }
   /* Very Large Desktop Screens */ 
   @media screen and (min-width: 1500px) {
@@ -2949,6 +2969,28 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       }
     }
   }
+  /* press release donation page template */
+    #press-release-donation-page-template {
+      @include page-header;
+      background: #fff;
+      color: $dark-blue;
+      img {
+        width: 100%;
+      }
+        .button-container {
+          @include button-container;
+          .rounded-green-button {
+            @include body-green-button;
+            margin-bottom: 20px;
+          }
+        }
+        h3 {
+          line-height: 1.5rem;
+          text-transform: none;
+          padding-bottom: 15px;
+        }
+    }
+
   /* pop up box */ 
   #sgpb-popup-dialog-main-div {
     background-color: $lime-green !important;

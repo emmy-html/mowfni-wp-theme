@@ -39,7 +39,7 @@ header {
   justify-content: space-between;
   padding: 0px 20px; }
   header img {
-    padding: 10px; }
+    padding: 5px; }
 
 /* Grid Elements */
 .ml-auto,
@@ -4152,7 +4152,20 @@ footer {
     padding: 20px 0px; }
   #subaru-event-page .button-container {
     width: 25%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  /* press release donation page */
+  #press-release-donation-page-template img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; }
+  #press-release-donation-page-template .press-release-donation-page-content-container article {
+    display: flex;
+    align-items: flex-end; }
+    #press-release-donation-page-template .press-release-donation-page-content-container article .content-wrapper:nth-of-type(1) {
+      width: 75%; }
+    #press-release-donation-page-template .press-release-donation-page-content-container article .content-wrapper:nth-of-type(2) {
+      width: 25%; } }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {
   #popover .sticky.donation-popover {
@@ -4290,6 +4303,52 @@ div#n2-ss-3 .n2-ss-button-container:hover, div#n2-ss-3 .n2-ss-button-container a
       line-height: 2rem;
       text-transform: none;
       padding: 20px 0px; }
+
+/* press release donation page template */
+#press-release-donation-page-template {
+  background: #fff;
+  color: #003952; }
+  #press-release-donation-page-template h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #press-release-donation-page-template h1 span {
+      color: #003952; }
+  #press-release-donation-page-template img {
+    width: 100%; }
+  #press-release-donation-page-template .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    #press-release-donation-page-template .button-container a:link,
+    #press-release-donation-page-template .button-container a:visited {
+      border-bottom: none;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #press-release-donation-page-template .button-container a:link:hover,
+      #press-release-donation-page-template .button-container a:visited:hover {
+        border-bottom: none; }
+    #press-release-donation-page-template .button-container .rounded-green-button {
+      background: #a9cf38;
+      border-radius: 5px;
+      border-bottom: none;
+      padding: 5px 15px;
+      margin-bottom: 20px; }
+      #press-release-donation-page-template .button-container .rounded-green-button:hover {
+        background: #00b5c2;
+        transition: 1s background; }
+  #press-release-donation-page-template h3 {
+    line-height: 1.5rem;
+    text-transform: none;
+    padding-bottom: 15px; }
 
 /* pop up box */
 #sgpb-popup-dialog-main-div {

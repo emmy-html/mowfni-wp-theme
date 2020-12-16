@@ -30,7 +30,9 @@
       </div>  
     </section>
 <header id="header-nav" class="header-desktop-adjust">
-  <img src="https://i.imgur.com/Kio5ah0.png" width="50" height="50">
+  <a href="<?php echo get_home_url(); ?>">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/lime_logo.png" width="87" height="60">
+  </a>
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 </header>
 <div id="translate-option" class="translate-section">
