@@ -54,5 +54,8 @@ function closeTopbar() {
             }
         });
     }
-    document.getElementById("defaultTab").click();
+    var element = document.getElementById("defaultTab");
+    if (typeof(element) != 'undefined' && element != null) {
+      document.getElementById("defaultTab").click();
+    }
   }

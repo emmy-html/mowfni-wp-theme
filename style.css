@@ -1880,19 +1880,20 @@ footer {
         border: none;
         outline: none;
         transition: 0.4s; }
+        #donation-page .donation-page-content-container .faq-container .accordion:after {
+          font-family: "Font Awesome 5 Free";
+          font-size: .75rem;
+          content: '\f067';
+          margin-left: 5px; }
       #donation-page .donation-page-content-container .faq-container .active,
       #donation-page .donation-page-content-container .faq-container .accordion:hover {
         background: #00b5c2;
         color: #003952; }
-      #donation-page .donation-page-content-container .faq-container .accordion:after {
-        content: '\02795';
-        font-size: 13px;
-        color: #003952 !important;
-        float: right;
-        margin-left: 5px; }
       #donation-page .donation-page-content-container .faq-container .active:after {
-        content: "\2796";
-        color: #003952 !important; }
+        font-family: "Font Awesome 5 Free";
+        font-size: .75rem;
+        content: '\f068';
+        margin-left: 5px; }
       #donation-page .donation-page-content-container .faq-container .panel {
         background: #fff;
         padding: 0 18px;
