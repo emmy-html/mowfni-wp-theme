@@ -2028,6 +2028,98 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
       }
     }
   }
+  /* New Donate Page */ 
+#new-donate-page {
+  @include page-header;
+  background: #fff;
+  color: $dark-blue;
+  .button-container {
+    @include button-container;
+    margin-bottom: 20px;
+    .rounded-blue-button {
+      @include body-blue-button;
+    }
+    .rounded-green-button {
+      @include body-green-button;
+    }
+  }
+  .donation-page-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donation-container {
+    margin-top: 20px;
+  }
+  .faq-and-desc {
+    h2 {
+      line-height: 1.5rem;
+      text-transform: none;
+      padding-bottom: 20px;
+    }
+    .content-wrapper.faq {
+      margin: 20px;
+    }
+    .faq-container {
+      .accordion {
+        background-color: $lime-green;
+        color: $dark-blue;
+        cursor: pointer;
+        font-family: $heading-font;
+        font-weight: bold;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.3s;
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          font-size: .75rem;
+          content: '\f067';
+          margin-left: 5px;
+        }
+      }
+      .active, .accordion:hover {
+        background-color: #fff;
+      }
+      .active:after {
+        font-family: "Font Awesome 5 Free";
+        font-size: .75rem;
+        content: '\f068';
+        margin-left: 5px;
+      }
+      .panel {
+        background-color: #fff;
+        display: none;
+        overflow: hidden;
+      }
+    }
+  }
+  .donation-page-content-container {
+    .donation-page-donor-support {
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .donor-support-icons {
+        img {
+          border-radius: 100px;
+          height: 150px;
+          margin-top: 20px;
+          object-fit: cover;
+          width: 150px;
+        }
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
   /* Large Tablets & Desktop Styles */ 
   @media screen and (min-width: 992px) {
     /* Universal Styles */ 
@@ -2881,6 +2973,28 @@ MOWFNI Parent is distributed under the terms of the GNU GPL
         width: 75%;
       }
     }
+      /* New Donate Page */ 
+  #new-donate-page {
+    .donation-page-content-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      article:nth-of-type(1) {
+        width: 30%;
+      }
+      aside.faq-and-desc {
+        h1 {
+          background: none;
+        }
+        width: 75%;
+      }
+      article.donation-page-donor-support {
+        margin: 0 auto;
+        width: 50%;
+      }
+    }
+  }
   }
   /* Very Large Desktop Screens */ 
   @media screen and (min-width: 1500px) {

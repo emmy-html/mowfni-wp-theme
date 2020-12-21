@@ -3560,6 +3560,107 @@ footer {
         background: #00b5c2;
         transition: 1s background; }
 
+/* New Donate Page */
+#new-donate-page {
+  background: #fff;
+  color: #003952; }
+  #new-donate-page h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #new-donate-page h1 span {
+      color: #003952; }
+  #new-donate-page .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px; }
+    #new-donate-page .button-container a:link,
+    #new-donate-page .button-container a:visited {
+      border-bottom: none;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #new-donate-page .button-container a:link:hover,
+      #new-donate-page .button-container a:visited:hover {
+        border-bottom: none; }
+    #new-donate-page .button-container .rounded-blue-button {
+      background: #00b5c2;
+      border-radius: 5px;
+      padding: 5px 15px; }
+      #new-donate-page .button-container .rounded-blue-button:hover {
+        background: #a9cf38;
+        transition: 1s background; }
+    #new-donate-page .button-container .rounded-green-button {
+      background: #a9cf38;
+      border-radius: 5px;
+      border-bottom: none;
+      padding: 5px 15px; }
+      #new-donate-page .button-container .rounded-green-button:hover {
+        background: #00b5c2;
+        transition: 1s background; }
+  #new-donate-page .donation-page-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #new-donate-page .donation-container {
+    margin-top: 20px; }
+  #new-donate-page .faq-and-desc h2 {
+    line-height: 1.5rem;
+    text-transform: none;
+    padding-bottom: 20px; }
+  #new-donate-page .faq-and-desc .content-wrapper.faq {
+    margin: 20px; }
+  #new-donate-page .faq-and-desc .faq-container .accordion {
+    background-color: #a9cf38;
+    color: #003952;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.3s; }
+    #new-donate-page .faq-and-desc .faq-container .accordion:after {
+      font-family: "Font Awesome 5 Free";
+      font-size: .75rem;
+      content: '\f067';
+      margin-left: 5px; }
+  #new-donate-page .faq-and-desc .faq-container .active, #new-donate-page .faq-and-desc .faq-container .accordion:hover {
+    background-color: #fff; }
+  #new-donate-page .faq-and-desc .faq-container .active:after {
+    font-family: "Font Awesome 5 Free";
+    font-size: .75rem;
+    content: '\f068';
+    margin-left: 5px; }
+  #new-donate-page .faq-and-desc .faq-container .panel {
+    background-color: #fff;
+    display: none;
+    overflow: hidden; }
+  #new-donate-page .donation-page-content-container .donation-page-donor-support .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #new-donate-page .donation-page-content-container .donation-page-donor-support .donor-support-icons img {
+    border-radius: 100px;
+    height: 150px;
+    margin-top: 20px;
+    object-fit: cover;
+    width: 150px; }
+  #new-donate-page .donation-page-content-container .donation-page-donor-support p {
+    text-align: justify; }
+
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
   /* Universal Styles */
@@ -4222,7 +4323,23 @@ footer {
       width: 25%; }
 
   #faq-page-template article {
-    width: 75%; } }
+    width: 75%; }
+
+  /* New Donate Page */
+  #new-donate-page .donation-page-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; }
+    #new-donate-page .donation-page-content-container article:nth-of-type(1) {
+      width: 30%; }
+    #new-donate-page .donation-page-content-container aside.faq-and-desc {
+      width: 75%; }
+      #new-donate-page .donation-page-content-container aside.faq-and-desc h1 {
+        background: none; }
+    #new-donate-page .donation-page-content-container article.donation-page-donor-support {
+      margin: 0 auto;
+      width: 50%; } }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {
   #popover .sticky.donation-popover {
