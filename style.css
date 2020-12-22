@@ -3372,7 +3372,6 @@ footer {
       margin: 0;
       padding: 0px 20px; }
 
-/* Grundy & Kendall County Page Template */
 /* Single MOW Location Page Additional Info */
 #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container {
   background: #fff;
@@ -3776,6 +3775,9 @@ footer {
   #gk-county-page-template .map {
     width: 100%;
     height: auto; }
+  #gk-county-page-template h1.more-about-mow {
+    background: #003952;
+    color: #fff; }
   #gk-county-page-template .about-mow-page-programs-span {
     background: #fff;
     display: flex;
@@ -3797,7 +3799,9 @@ footer {
       margin: 0 auto; }
     #gk-county-page-template .about-mow-page-programs-span h2 {
       font-weight: bold;
-      padding: 10px 0px; }
+      padding: 15px 0px; }
+      #gk-county-page-template .about-mow-page-programs-span h2 span {
+        display: block; }
     #gk-county-page-template .about-mow-page-programs-span:nth-of-type(even) {
       background: #00b5c2; }
     #gk-county-page-template .about-mow-page-programs-span p {
@@ -4497,28 +4501,36 @@ footer {
       flex-direction: row; }
       #gk-county-page-template .gk-county-page-content .gk-county-page-application .ccu-info img {
         padding-right: 10px; }
-    #gk-county-page-template .gk-county-page-content .map-locations .map-locations-container {
+    #gk-county-page-template .gk-county-page-content .map-locations-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      #gk-county-page-template .gk-county-page-content .map-locations .map-locations-container aside {
+      #gk-county-page-template .gk-county-page-content .map-locations-container aside {
         width: 100%; }
-        #gk-county-page-template .gk-county-page-content .map-locations .map-locations-container aside .content-wrapper {
+        #gk-county-page-template .gk-county-page-content .map-locations-container aside .content-wrapper {
           display: flex;
           flex-direction: row;
           align-items: flex-start;
           justify-content: space-between;
           text-align: center; }
-          #gk-county-page-template .gk-county-page-content .map-locations .map-locations-container aside .content-wrapper div:nth-of-type(1) {
+          #gk-county-page-template .gk-county-page-content .map-locations-container aside .content-wrapper div:nth-of-type(1) {
             width: 45%; }
-          #gk-county-page-template .gk-county-page-content .map-locations .map-locations-container aside .content-wrapper div:nth-of-type(2) {
+          #gk-county-page-template .gk-county-page-content .map-locations-container aside .content-wrapper div:nth-of-type(2) {
             width: 25%; }
-          #gk-county-page-template .gk-county-page-content .map-locations .map-locations-container aside .content-wrapper div:nth-of-type(3) {
+          #gk-county-page-template .gk-county-page-content .map-locations-container aside .content-wrapper div:nth-of-type(3) {
             width: 25%; }
   #gk-county-page-template .about-mow-page-programs {
     display: flex;
-    flex-direction: row; } }
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  #gk-county-page-template .about-mow-page-programs-span {
+    height: 300px; }
+    #gk-county-page-template .about-mow-page-programs-span:nth-of-type(1) {
+      background: #a9cf38; }
+    #gk-county-page-template .about-mow-page-programs-span p {
+      padding: 0px 100px; } }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {
   #popover .sticky.donation-popover {

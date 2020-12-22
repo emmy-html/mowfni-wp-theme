@@ -100,7 +100,7 @@
                 <?php endif; ?>
             </article>
         </div>
-        <h1>More About Our Program</h1>
+        <h1 class="more-about-mow">More About Our Program</h1>
         <article class="about-mow-page-programs">
             <div class="about-mow-page-programs-span">
                 <i class="fas fa-carrot fa-3x"></i>
