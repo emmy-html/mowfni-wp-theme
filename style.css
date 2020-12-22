@@ -3364,6 +3364,7 @@ footer {
       margin: 0;
       padding: 0px 20px; }
 
+/* Grundy & Kendall County Page Template */
 /* Single MOW Location Page Additional Info */
 #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container {
   background: #fff;
@@ -3661,6 +3662,137 @@ footer {
     width: 150px; }
   #new-donate-page .donation-page-content-container .donation-page-donor-support p {
     text-align: justify; }
+
+/* Grundy & Kendall County Page Template */
+#gk-county-page-template {
+  background: #fff;
+  color: #003952; }
+  #gk-county-page-template h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #gk-county-page-template h1 span {
+      color: #003952; }
+  #gk-county-page-template .gk-county-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #gk-county-page-template .gk-county-page-content .gk-county-page-application h2 {
+      font-weight: bold;
+      padding: 10px 0px; }
+    #gk-county-page-template .gk-county-page-content .gk-county-page-application .ccu-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #gk-county-page-template .gk-county-page-content .gk-county-page-application .ccu-info h3 {
+        padding: 5px 0px; }
+      #gk-county-page-template .gk-county-page-content .gk-county-page-application .ccu-info p {
+        margin: 0;
+        padding: 0px; }
+    #gk-county-page-template .gk-county-page-content .gk-county-page-application .button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      #gk-county-page-template .gk-county-page-content .gk-county-page-application .button-container a:link,
+      #gk-county-page-template .gk-county-page-content .gk-county-page-application .button-container a:visited {
+        border-bottom: none;
+        color: #003952;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase; }
+        #gk-county-page-template .gk-county-page-content .gk-county-page-application .button-container a:link:hover,
+        #gk-county-page-template .gk-county-page-content .gk-county-page-application .button-container a:visited:hover {
+          border-bottom: none; }
+      #gk-county-page-template .gk-county-page-content .gk-county-page-application .button-container .rounded-green-button {
+        background: #a9cf38;
+        border-radius: 5px;
+        border-bottom: none;
+        padding: 5px 15px;
+        margin: 10px; }
+        #gk-county-page-template .gk-county-page-content .gk-county-page-application .button-container .rounded-green-button:hover {
+          background: #00b5c2;
+          transition: 1s background; }
+  #gk-county-page-template .map-locations p {
+    text-align: justify; }
+  #gk-county-page-template .map-locations .map-locations-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px; }
+    #gk-county-page-template .map-locations .map-locations-container aside {
+      width: 100%;
+      padding-bottom: 25px; }
+      #gk-county-page-template .map-locations .map-locations-container aside .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        #gk-county-page-template .map-locations .map-locations-container aside .content-wrapper div {
+          width: 100%; }
+        #gk-county-page-template .map-locations .map-locations-container aside .content-wrapper .location-more-info {
+          font-size: .80rem; }
+          #gk-county-page-template .map-locations .map-locations-container aside .content-wrapper .location-more-info i.fas.fa-location-arrow {
+            font-size: .55rem; }
+          #gk-county-page-template .map-locations .map-locations-container aside .content-wrapper .location-more-info a {
+            margin-right: 3px; }
+          #gk-county-page-template .map-locations .map-locations-container aside .content-wrapper .location-more-info i {
+            margin: 0px 2.5px; }
+      #gk-county-page-template .map-locations .map-locations-container aside h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        line-height: 1.25rem;
+        margin: 0; }
+        #gk-county-page-template .map-locations .map-locations-container aside h3 span {
+          display: block;
+          font-weight: 300;
+          line-height: 1.20rem;
+          text-transform: none; }
+      #gk-county-page-template .map-locations .map-locations-container aside .pick-up-time {
+        padding-bottom: 10px; }
+      #gk-county-page-template .map-locations .map-locations-container aside p {
+        line-height: 1.25rem;
+        margin: 0;
+        padding-bottom: 10px;
+        text-align: center; }
+  #gk-county-page-template .map {
+    width: 100%;
+    height: auto; }
+  #gk-county-page-template .about-mow-page-programs-span {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0px; }
+    #gk-county-page-template .about-mow-page-programs-span i {
+      background: #003952;
+      color: #a9cf38;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      border-radius: 200px;
+      margin: 0 auto; }
+    #gk-county-page-template .about-mow-page-programs-span h2 {
+      font-weight: bold;
+      padding: 5px 0px; }
+    #gk-county-page-template .about-mow-page-programs-span:nth-of-type(even) {
+      background: #00b5c2; }
+    #gk-county-page-template .about-mow-page-programs-span p {
+      margin: 0;
+      padding: 0px 20px;
+      text-align: justify; }
 
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
