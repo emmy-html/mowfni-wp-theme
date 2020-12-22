@@ -7,10 +7,10 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <h1><?php the_title(); ?></h1>
         <div class="gk-county-page-content">
-            <div>
+            <div class="gk-county-page-content-container">
                 <article class="gk-county-page-application">
-                    <h2>Apply For
-                        <span>Meals on Wheels In <?php the_field('county_name'); ?> County</span>
+                    <h2>Apply For Meals on Wheels 
+                        <span>In <?php the_field('county_name'); ?> County</span>
                     </h2>
                     <div class="ccu-info">
                         <aside>
@@ -100,10 +100,8 @@
                 <?php endif; ?>
             </article>
         </div>
-
-
+        <h1>More About Our Program</h1>
         <article class="about-mow-page-programs">
-            <h1>More About Our Program</h1>
             <div class="about-mow-page-programs-span">
                 <i class="fas fa-carrot fa-3x"></i>
                 <h2>Our Commitment</h2>
